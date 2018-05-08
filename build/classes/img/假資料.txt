@@ -1,0 +1,1622 @@
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'LALA2','LALA2',TO_DATE('1990-05-24','YYYY-MM-DD'),'南投縣埔里鎮光明路6號',500,'信用卡匯款',4,'',1,1,1,1,'ba107team4@gmail.com','台北川景子');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'ZZ887','ZZ887',TO_DATE('1993-06-29','YYYY-MM-DD'),'桃園市中壢區民族路六段198號',1000,'信用卡匯款',4,'',1,1,1,1,'ba107team4@gmail.com','合歡山下智久');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'ORACLE23','ORACLE23',TO_DATE('1993-11-03','YYYY-MM-DD'),'高雄市岡山區本工路17號',600,'現金匯款',2,'',1,0,1,1,'ba107team4@gmail.com','壢新垣結衣');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'SAM5487','SAM5487',TO_DATE('1987-08-07','YYYY-MM-DD'),'高雄市路竹區國昌路76號',5000,'現金匯款',3,'',1,1,1,1,'ba107team4@gmail.com','中央狗鼻哥');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'QQ543','QQ543',TO_DATE('1989-09-27','YYYY-MM-DD'),'台南市永康區環工路29號',100,'現金匯款',1,'',0,0,0,0,'ba107team4@gmail.com','交大薛之謙');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'EQ235','EQ235',TO_DATE('1999-02-27','YYYY-MM-DD'),'台南市西港區慶安路32號',2000,'ATM匯款',3,'',1,0,1,1,'ba107team4@gmail.com','中大谷翔平');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'Z05498','Z05498',TO_DATE('1979-01-07','YYYY-MM-DD'),'台南市北門區舊埕187號',8000,'信用卡匯款',4,'',1,0,1,1,'ba107team4@gmail.com','新莊金城武');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'FGO089','FGO089',TO_DATE('1982-07-11','YYYY-MM-DD'),'嘉義縣太保市故宮大道888號',5500,'信用卡匯款',4,'',1,0,1,1,'ba107team4@gmail.com','平鎮福山雅治');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'FOOL0401','FOOL0401',TO_DATE('1994-04-01','YYYY-MM-DD'),'雲林縣虎尾鎮過溪56之2號',500,'ATM匯款',2,'',1,0,1,1,'ba107team4@gmail.com','林口長澤雅美');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'PAD888','PAD888',TO_DATE('1992-12-19','YYYY-MM-DD'),'彰化縣田中鎮員集路3段440巷16弄1號',2500,'現金匯款',2,'',1,1,1,1,'ba107team4@gmail.com','南港綾瀨遙');
+INSERT INTO MEMBER VALUES ('M'||LPAD(TO_CHAR(MEM_SEQ.NEXTVAL),6,'0'),'TRQ234','TRQ234',TO_DATE('1996-03-13','YYYY-MM-DD'),'彰化縣彰化市溫泉路31號',50,'信用卡匯款',1,'',1,0,1,1,'ba107team4@gmail.com','淡水石原聰美');
+COMMIT;
+
+
+--員工假資料--
+INSERT INTO EMPLOYEE (EMP_NO,EMP_NM,EMP_PSW,EMP_STS) 
+VALUES ('EMP'||LPAD(TO_CHAR(EMP_SEQ.NEXTVAL),3,'0'),'王大偉','KINGDAVID','在職');
+INSERT INTO EMPLOYEE (EMP_NO,EMP_NM,EMP_PSW,EMP_STS) 
+VALUES ('EMP'||LPAD(TO_CHAR(EMP_SEQ.NEXTVAL),3,'0'),'卞燕','ORACHID123','停職');
+INSERT INTO EMPLOYEE (EMP_NO,EMP_NM,EMP_PSW,EMP_STS) 
+VALUES ('EMP'||LPAD(TO_CHAR(EMP_SEQ.NEXTVAL),3,'0'),'李吉','LEECHIN123','在職');
+INSERT INTO EMPLOYEE (EMP_NO,EMP_NM,EMP_PSW,EMP_STS) 
+VALUES ('EMP'||LPAD(TO_CHAR(EMP_SEQ.NEXTVAL),3,'0'),'王家驊','DANCERGOOD','在職');
+INSERT INTO EMPLOYEE (EMP_NO,EMP_NM,EMP_PSW,EMP_STS) 
+VALUES ('EMP'||LPAD(TO_CHAR(EMP_SEQ.NEXTVAL),3,'0'),'鍾興和','JNDIONE','離職');
+INSERT INTO EMPLOYEE (EMP_NO,EMP_NM,EMP_PSW,EMP_STS) 
+VALUES ('EMP'||LPAD(TO_CHAR(EMP_SEQ.NEXTVAL),3,'0'),'陳月美','MEI55666','離職');	
+
+-----------------------------------------------------------------
+--員工權限功能假資料--
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),'促銷活動管理');	
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),' 任務管理');
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),'官方商城管理');
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),'  最新消息管理');
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),'檢舉管理');
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),'權限管理');
+INSERT INTO EMP_PERMISSION_CLASS (PMS_ID,PMS_INTRO) VALUES ('PMS'||LPAD(TO_CHAR(EMP_PMS_SEQ.NEXTVAL),3,'0'),'其他管理');	
+-----------------------------------------------------------------
+COMMIT;
+
+--員工權限假資料--
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP006','PMS002');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP006','PMS003');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP006','PMS004');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP006','PMS005');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP006','PMS006');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP005','PMS007');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP003','PMS007');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP004','PMS007');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP002','PMS002');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP002','PMS003');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP002','PMS004');
+INSERT INTO EMP_PERMISSION (EMP_NO,PMS_ID) VALUES ('EMP001','PMS001');
+COMMIT;
+-----------------------------------------------------------------
+
+--代購案件假資料--
+
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000003','美國隊長的盾牌','框框框,電影裡面最帥氣的美國隊長,之所以無敵,就是那一副神奇的盾牌,找人團購買盾牌喔',sysdate+6/24,sysdate+8/24/60,'招募參與',sysdate+1/24,'ASIA',100,200,10,15,1000,500,'一頂','閃亮','美國隊長萬歲');
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000007','HYPER-JACKET WITH SHERPA COLLAR','TO RECRUIT SOME PEOPLE TO JOIN MY PARTY',sysdate+6/24,sysdate+12/24,'招募參與',sysdate+180/24,'PACIFIC',100,200,10,15,1000,500,'一件','BRIGHT','HYPERJACKET');	
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000005','老闆的眼淚','話說釣蝦場那神秘的眼淚,據說一池就能讓你化身釣蝦高手,大家要不要一起嘗試看看阿',sysdate+1,sysdate+36/24,'招募參與',sysdate+30/24/60,'ASIA',100,200,10,15,1000,500,'一搓','DARK','最厲害的釣蝦神氣');
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000001','代購李嚴的醬汁','李嚴醬汁橫空出世,所有沒嘗過沒吃過的朋友,快來一起品嘗吧,只有愛吃的人最懂吃',sysdate+24/24,sysdate+120/24,'招募參與',sysdate+192/24,'AMERICA',200,300,20,30,10000,1500,'無','深色','就是個醬汁');
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000002','我最愛的大熊貓','以前最愛看熊貓,今天來懷舊一下,有沒有人要一起買熊貓',sysdate+144/24,sysdate+168/24,'招募參與',sysdate+192/24,'ASIA',100,200,10,15,1000,500,'小隻','DARK','沒有');
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000005','滑滑的滑板鞋','摩擦摩擦, 大家都聽過這首耳熟能詳的歌,不知今天有沒有人要一起圓夢買雙滑板鞋,一起來摩擦摩擦',sysdate,sysdate+12/24,'購買確認中',sysdate+168/24,'ASIA',100,200,10,15,1000,500,'一雙','DARK','最棒的滑板鞋');
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000006','BOSS音響','老司機我做過功課了,如果把運費壓到1000以下一定比較便宜的,不管是自家用還是放在店裡都超高CP的',sysdate+12/24,sysdate+48/24,'購買確認中',sysdate+180/24,'ASIA',100,200,5,7,1000,500,'一副','BRIGHT-WHITE','高CP音響');
+COMMIT;
+
+
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000001','無敵玩具槍','最近看到好多人在玩玩具槍,突然童心未泯,好想買一把喔,有沒有人想要一起成團阿^^',sysdate+5/24,sysdate+6/24,'招募代購人',sysdate+168/24,'ASIA',100,200,10,15,1000,500,'小隻','DARK','沒有');
+
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000006','懷舊掛照片','餐廳想要走懷舊風,想要多買一點70年代的照片,美式的那種,大家要不要一起懷舊一下',SYSDATE+3/24,SYSDATE+5/24,'招募代購人',SYSDATE+173/24,'ASIA',100,200,10,15,1000,500,'小隻','DARK','沒有');
+
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000007','拳擊手套','想練一下有氧拳擊,男女皆可喔,尺寸我們可以再商量,顏色也是,順便找一下拳擊夥伴,LINE:123345Culprit',SYSDATE+1/24,SYSDATE+2/24,'招募代購人',SYSDATE+170/24,'ASIA',100,200,10,15,1000,500,'小隻','DARK','沒有');
+
+INSERT INTO COMMISION (COM_ID,MEM_ID,COM_TIT,COM_CNT,COM_S_DT,COM_E_DT,COM_STS,LT_M_DT,LMT_LCL,LMT_ATD_LV,LMT_AUC_LV,COM_MIN_NUM,COM_MX_NUM,LMT_M_PRC,LMT_DEL_PRC,IT_SZ,IT_COL,COM_RMD) VALUES ('COM'||LPAD(TO_CHAR(COM_SEQ.NEXTVAL),3,'0'),'M000004','Nike Vapormax Moc “Cool Grey” ','快來喔, 美國單買一雙Vapormax 只要190鎂也不需要排隊,受不了排隊跟炒鞋的朋友一起前進美國大陸',SYSDATE+2/24,SYSDATE+4/24,'招募代購人',SYSDATE+172/24,'AMERICA',100,200,10,15,1000,500,'小隻','DARK','沒有');
+
+
+-----------------------------------------------------------------
+
+--代購參予假資料--
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000001','COM001','參與中',5,'台北市中山區中山北路七段三樓','信用卡付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000003','COM001','參與中',5,'台北市園山區酒泉街九巷八樓','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000004','COM001','參與中',5,'台北市中山區中原街41號','ATM付款','未付款');
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000007','COM002','參與中',5,'臺北市大安區金山南路2段55號','信用卡付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000001','COM002','參與中',5,'台北市內湖區康寧路三段189巷21弄26號','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000002','COM002','參與中',5,'台北市中正區廈門街113巷17號','信用卡付款','未付款');
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000005','COM003','參與中',5,'台北市士林區基河路223巷四樓','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000004','COM003','參與中',5,'台北市中山區中原街41號','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000006','COM003','參與中',5,'台北市大安區金山南路二段113號','信用卡付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000002','COM003','參與中',5,'台北市中正區廈門街113巷17號','信用卡付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000007','COM003','參與中',5,'台北市士林區基河路223巷四樓','信用卡付款','未付款');
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000001','COM004','參與中',5,'台北市士林區基河路223巷四樓','ATM付款','未付款');
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000002','COM005','參與中',5,'台北市中正區廈門街113巷17號','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000004','COM005','參與中',5,'台北市中山區中原街41號','ATM付款','未付款');
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000005','COM006','參與中',5,'台北市士林區基河路223巷四樓','信用卡付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000003','COM006','參與中',5,'台北市園山區酒泉街九巷八樓','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000002','COM006','參與中',5,'台北市中正區廈門街113巷17號','信用卡付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000006','COM006','參與中',5,'台北市大安區金山南路二段113號','ATM付款','未付款');
+
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000006','COM007','參與中',5,'台北市大安區金山南路二段113號','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000002','COM007','參與中',5,'台北市中正區廈門街113巷17號','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000003','COM007','參與中',5,'台北市園山區酒泉街九巷八樓','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000001','COM007','參與中',5,'台北市士林區基河路223巷四樓','ATM付款','未付款');
+INSERT INTO COMMISION_PARTICIPANTS_LIST (MEM_ID,COM_ID,MEM_STS,COM_IT_NUM,DLT_ADDS,COM_PY,COM_STS) VALUES ('M000007','COM007','參與中',5,'台北市士林區基河路223巷四樓','ATM付款','未付款');
+
+-----------------------------------------------------------
+
+--代購留言假資料--
+
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM004','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000001','怎麼都沒有人來參加活動,是不是標題下的不好');
+
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM001','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000001','大家多找點人參加吧, 不然又要留局了');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM001','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000003','我盡量');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM001','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000004','要不要團主把限制調低一點啊');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM001','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000001','我想想');
+
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM002','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000007','團主都沒好好管理');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM002','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000002','我看我自己開一團好了');
+
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM003','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000005','大家好');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM003','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000006','團主可否把時間延期一點');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM003','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000005','怎麼了?');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM003','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000005','我有一點事,我怕投票日期感不上');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM003','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000005','....我想想');
+
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM005','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000002','這限制跟標題也下的太沒水平了吧');
+INSERT INTO COMMISION_COMMENT (COM_ID,COMT_ID,MEM_ID,CMT_CNT) VALUES('COM005','COM_COMT'||LPAD(TO_CHAR(COMT_SEQ.NEXTVAL),3,'0'),'M000004','你說甚麼!?');
+commit;
+-----------------------------------------------------------
+
+
+--代購競標名單假資料--
+
+INSERT INTO COMMISION_BIDDING_LIST (MEM_ID,COM_ID,AUC_PRC,AUC_DEL_PRC,N_O_V,AT_STS) 
+VALUES ('M000004','COM007',10000,1200,2,'競標中');
+INSERT INTO COMMISION_BIDDING_LIST (MEM_ID,COM_ID,AUC_PRC,AUC_DEL_PRC,N_O_V,AT_STS) 
+VALUES ('M000005','COM007',11000,1050,2,'競標中');
+-----------------------------
+
+--代購檢舉假資料--
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000001','EMP001','COM001','標題跟內容物有所差距,請員工下架','待處理',TO_TIMESTAMP('2018-03-20 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000003','EMP003','COM002','標題打甚麼英文拉看不懂','待處理',TO_TIMESTAMP('2018-03-22 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000004','','COM003','賣家要求私底下用LINE交易，我覺得很有問題，心裡毛毛的，請求官方處理','待處理',TO_TIMESTAMP('2018-04-01 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000006','','COM004','賣方態度極為囂張跋扈，我都還沒確認清楚商品規格，就要求我私底下匯款，覺得有詐!','待處理',TO_TIMESTAMP('2018-01-03 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000005','','COM005','讓我按按看這個功能是不是真的，聽說按下去回復檢舉的都是機器人','待處理',TO_TIMESTAMP('2018-01-13 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000002','','COM010','賣家幾天都沒回覆任何消息，都不曉得這個賣場是在養蚊子，還是在等人上當的，請官方盡快處理','待處理',TO_TIMESTAMP('2018-03-13 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000007','','COM006','沙發~~坐一下','待處理',TO_TIMESTAMP('2018-02-13 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000008','','COM007','沙發~~坐一下','待處理',TO_TIMESTAMP('2018-02-14 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000009','','COM008','沙發~~坐一下','待處理',TO_TIMESTAMP('2018-02-15 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO COMMISION_APPEAL (COM_APL_ID,MEM_ID,EMP_NO,COM_ID,APL_CNT,APL_STS,COM_CAPL_DATE) VALUES ('COM_APL'||LPAD(TO_CHAR(COM_APL_SEQ.NEXTVAL),3,'0'),'M000010','','COM009','沙發~~坐一下','待處理',TO_TIMESTAMP('2018-02-16 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='無效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL001';
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='無效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL002';
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='無效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL004';
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='無效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL003';
+
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='有效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL005';
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='有效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL006';
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='有效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL007';
+UPDATE COMMISION_APPEAL set EMP_NO='EMP001', APL_STS='有效檢舉', COM_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', COM_RAPLDATE=CURRENT_TIMESTAMP  where COM_APL_ID ='COM_APL008';
+
+
+
+
+
+
+
+----------------------
+
+--代購留言檢舉假資料--
+INSERT INTO COMMISION_COMMENT_APPEAL (COM_CAPL_ID,COM_ID,MEM_ID_RP,MEM_ID_RPD,EMP_NO,APL_CNT,APL_STS,COMT_ID,COM_CAPL_DATE) 
+VALUES ('COMT_APL'||LPAD(TO_CHAR(COM_CAPL_ID.NEXTVAL),3,'0'),'COM004','M000004','M000002','EMP001','辱罵請處理','有效檢舉','COM_COMT001',TO_TIMESTAMP('2018-03-20 18:28:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO COMMISION_COMMENT_APPEAL (COM_CAPL_ID,COM_ID,MEM_ID_RP,MEM_ID_RPD,EMP_NO,APL_CNT,APL_STS,COMT_ID,COM_CAPL_DATE) 
+VALUES ('COMT_APL'||LPAD(TO_CHAR(COM_CAPL_ID.NEXTVAL),3,'0'),'COM001','M000002','M000003','EMP002','潮尼馬.....老O沒搶到沙發','有效檢舉','COM_COMT003',TO_TIMESTAMP('2018-03-20 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+-----------------------------------------------------------
+
+--代購退貨假資料--
+                                     
+INSERT INTO COMMISION_REFUND (COM_RF_ID,MEM_ID,EMP_NO,COM_ID,IT_NUM,IT_SUM,RF_CNT,RF_MT,RF_STS,RF_DATE,RF_E_DATE,RF_E_END) 
+VALUES('COM_RF_ID'||LPAD(TO_CHAR(COM_RF_SEQ.NEXTVAL),3,'0'),'M000005','EMP003','COM003',2,2000,'不符合預期','帳戶匯款','申訴處理中',TO_TIMESTAMP('2018-03-1 18:28:30','YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2018-03-08 08:28:30','YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2018-03-15 08:28:30','YYYY-MM-DD HH24:MI:SS'));
+
+
+--聊天室訊息假資料--
+
+INSERT INTO CHATROOM_MESSAGE (MSG_ID,MEM_ID_SEND,MEM_ID_GET,MSG_STS,MSG_CNT) VALUES('CHAT'||LPAD(TO_CHAR(CHAT_SEQ.NEXTVAL),3,'0'),'M000001','M000002',1,'0');
+INSERT INTO CHATROOM_MESSAGE (MSG_ID,MEM_ID_SEND,MEM_ID_GET,MSG_STS,MSG_CNT) VALUES('CHAT'||LPAD(TO_CHAR(CHAT_SEQ.NEXTVAL),3,'0'),'M000005','M000003',0,'安安');
+INSERT INTO CHATROOM_MESSAGE (MSG_ID,MEM_ID_SEND,MEM_ID_GET,MSG_STS,MSG_CNT) VALUES('CHAT'||LPAD(TO_CHAR(CHAT_SEQ.NEXTVAL),3,'0'),'M000003','M000005',1,'約嗎?');
+INSERT INTO CHATROOM_MESSAGE (MSG_ID,MEM_ID_SEND,MEM_ID_GET,MSG_STS,MSG_CNT) VALUES('CHAT'||LPAD(TO_CHAR(CHAT_SEQ.NEXTVAL),3,'0'),'M000005','M000003',1,'欠吉嗎?');
+INSERT INTO CHATROOM_MESSAGE (MSG_ID,MEM_ID_SEND,MEM_ID_GET,MSG_STS,MSG_CNT) VALUES('CHAT'||LPAD(TO_CHAR(CHAT_SEQ.NEXTVAL),3,'0'),'M000009','M000001',1,'您好');
+-------------------------------INSERT INTO CHATROOM_MESSAGE------------------------------------
+
+--聊天室黑名單假資料--
+INSERT INTO CHATROOM_BLACKLIST VALUES('BLK'||LPAD(TO_CHAR(BLACK_SEQ.NEXTVAL),3,'0'),'M000005','M000003');
+INSERT INTO CHATROOM_BLACKLIST VALUES('BLK'||LPAD(TO_CHAR(BLACK_SEQ.NEXTVAL),3,'0'),'M000003','M000005');
+INSERT INTO CHATROOM_BLACKLIST VALUES('BLK'||LPAD(TO_CHAR(BLACK_SEQ.NEXTVAL),3,'0'),'M000007','M000009');
+INSERT INTO CHATROOM_BLACKLIST VALUES('BLK'||LPAD(TO_CHAR(BLACK_SEQ.NEXTVAL),3,'0'),'M000005','M000010');
+INSERT INTO CHATROOM_BLACKLIST VALUES('BLK'||LPAD(TO_CHAR(BLACK_SEQ.NEXTVAL),3,'0'),'M000002','M000011');
+
+--------------------INSERT INTO CHATROOM_BLACKLIST------------------------------------
+--文章假資料--
+
+INSERT INTO ARTICLE (ART_ID,MEM_ID,ART_TLT,ART_CNT,LIKE_NUM,ART_STS)VALUES ('ART'||LPAD(TO_CHAR(ART_SEQ.NEXTVAL),3,'0'),'M000004','安安','安安 你好 大家好  我好 你好',1,'正常');
+INSERT INTO ARTICLE (ART_ID,MEM_ID,ART_TLT,ART_CNT,LIKE_NUM,ART_STS)VALUES ('ART'||LPAD(TO_CHAR(ART_SEQ.NEXTVAL),3,'0'),'M000002','安','乳提 本魯在吃包子的時候就想R 奇怪 大部分中式麵食類都有牛肉跟豬肉版本的 例如 餃子 常見的有豬肉有牛肉 餡餅 常見的也有豬肉有牛肉 但是包子好像就幾乎沒啥看到牛肉包子 大部分攤位都是賣豬肉餡的包子 怎麼牛肉包子相較起來就比較少見呢 有沒有八卦',3,'正常');
+INSERT INTO ARTICLE (ART_ID,MEM_ID,ART_TLT,ART_CNT,LIKE_NUM,ART_STS)VALUES ('ART'||LPAD(TO_CHAR(ART_SEQ.NEXTVAL),3,'0'),'M000005','妹妹','應該有前五的實力可是好像沒有他的打鬥連龜仙人跟克林都有了編劇在幹嗎阿砲灰戲份都比較多',3,'正常');
+INSERT INTO ARTICLE (ART_ID,MEM_ID,ART_TLT,ART_CNT,LIKE_NUM,ART_STS)VALUES ('ART'||LPAD(TO_CHAR(ART_SEQ.NEXTVAL),3,'0'),'M000009','87','約克羊的朋友以前跟約克羊在玩遊戲特別喜愛牧師什麼遊戲都會想要選牧師沒有牧師就會選那種能補血的角色他目前在護理系就讀他覺得未來工作可能會有點無聊沒有辦法補血所以決定轉系去當牧師在工作上比較能得到快樂請問當牧師要唸什麼科系？',0,'正常');
+----------------------------------INSERT INTO ARTICLE------------------------------------
+
+ --文章收藏假資料--
+INSERT INTO ARTICLE_COLLECTION VALUES ('M000002','ART001');
+INSERT INTO ARTICLE_COLLECTION VALUES ('M000005','ART001');
+INSERT INTO ARTICLE_COLLECTION VALUES ('M000008','ART004');
+-----------------------------------------------------------------------------------------------------------------------
+
+--文章回復假資料--
+
+INSERT INTO ARTICLE_REPLY (RE_ID,ART_ID,MEM_ID,RE_CNT,RE_STS) VALUES ('ARTRE'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART001','M000001','美式炸雞越來越多，胖老爹漲價後，已經沒啥CP可言了，不開發票難道不會被競爭對手檢舉到死嗎有沒有胖老爹漲價又不用開發票的八卦?新聞上重罰3千是不是笑話','正常');
+INSERT INTO ARTICLE_REPLY (RE_ID,ART_ID,MEM_ID,RE_CNT,RE_STS) VALUES ('ARTRE'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART003','M000006','哆啦A夢的道具常常故障 修也要錢 看媽媽給的零用錢也沒多少 買個漫畫銅鑼燒就沒了 有一次拿任意門去修 還被推銷員嫌款式太老舊 零件不好找 推薦他乾脆買新的 這麼窮的哆啦A夢 買道具 修道具的錢哪來的 ？ 在雲之王國中 蓋城堡的道具數量不夠 蓋完要花好幾年 大雄想出賣股票來當道具資金 小夫買了300股 成為大股東 可是大雄那個年代的錢 要怎麼買未來的道具 有沒有哆啦A夢該怎麼買道具的八卦','正常');
+INSERT INTO ARTICLE_REPLY (RE_ID,ART_ID,MEM_ID,RE_CNT,RE_STS) VALUES ('ARTRE'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART001','M000009','站上去輪子就扁了','正常');
+INSERT INTO ARTICLE_REPLY (RE_ID,ART_ID,MEM_ID,RE_CNT,RE_STS) VALUES ('ARTRE'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART003','M000008','本肥宅已經玩滑板玩了兩年了突然好奇有沒有其他肥宅有在玩還是一站上去就斷了所以放棄啊拿來減肥我覺得不錯喔會整個大爆汗','正常');
+
+----------------------------------INSERT INTO ARTICLE_REPLY------------------------------------
+
+--文章留言假資料--
+
+INSERT INTO ARTICLE_COMMENT (ART_MSG_ID,ART_ID,MEM_ID,ART_MSG_CNT ,ART_MSG_LIKE_NUM) VALUES('ARTCOM'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART001','M000010','以現在的角度，小叮噹的道具都是中國貨，還是很破的中國',5);
+INSERT INTO ARTICLE_COMMENT (ART_MSG_ID,ART_ID,MEM_ID,ART_MSG_CNT ,ART_MSG_LIKE_NUM) VALUES('ARTCOM'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART002','M000009','這篇釣的到 我請樓下一百樓請大家吃雞排',5);
+INSERT INTO ARTICLE_COMMENT (ART_MSG_ID,ART_ID,MEM_ID,ART_MSG_CNT ,ART_MSG_LIKE_NUM) VALUES('ARTCOM'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART001','M000007','關你屁事',0);
+INSERT INTO ARTICLE_COMMENT (ART_MSG_ID,ART_ID,MEM_ID,ART_MSG_CNT ,ART_MSG_LIKE_NUM) VALUES('ARTCOM'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART003','M000005','三杯',5);
+INSERT INTO ARTICLE_COMMENT (ART_MSG_ID,ART_ID,MEM_ID,ART_MSG_CNT ,ART_MSG_LIKE_NUM) VALUES('ARTCOM'||LPAD(TO_CHAR(ARTMSG_SEQ.NEXTVAL),3,'0'),'ART001','M000001','關你屁事',10);
+----------------------------------------------------------------------
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000001','胖嘟嘟童裝','全館商品均為原廠貨與新品,請您安心購買。如商品無現貨需請您耐心等候,敬請見諒。','開業');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000002','理膚寶水優惠商品！','希望可以提供給您最好的商品與最好的服務，歡迎提供任何的建議與不足的地方。','開業');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000003','小龍貓衣櫥','服務時間: 周一至周五 09:30-18:30 不含例假日 客服專線: 02-234568792','停權');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000004','8號童裝','出貨時間 : 週一~週五下午3:00前超級商城轉單完成當天可出貨, 週六/週日沒有出貨喔^^ 若對商品有任何問題歡迎利用問與答跟小幫手聯絡，敬請多多包涵，謝謝！','開業');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000005','玖貳伍','*下標前請詳閱「購物說明」*例假日無法立即回應問題及出貨，請多見諒*平日若有急件可先詢問是否有現貨','停權');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000006','小鍾','一律於訂單成立的隔日出貨（缺貨商品例外），遇假日、國定假日順延。（因一例一休之故，宅配如遇六、日、國定假日順延配送） ','開業');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000007','菲妮姐姐的網路商店','【如對館內任何商品有疑問或想多了解想多看實品照皆可私訊店長,與店長聯繫】店裡部份商品現貨,部份商品為預購,預購等待時間約5-10天,下單前可先詢問店長呦！','開業');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000008','erica chang','購物新年好鑫情，全館商品特賣促銷！還有眾多商品搶先促銷熱賣唷','停權');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000009','Elun','我們堅持先認真了解顧客需求，努力幫您找到對的合適的好商品','開業');
+Insert into PERSONAL_STORE (ST_ID,MEM_ID,ST_NAME,ST_INTRO,ST_STS) values ('ST'||LPAD(to_char(PERSONAL_STORE_SEQ.NEXTVAL), 3, '0'),'M000010','賣場提供最潮最流行商品，保證正品，以最平實的價格讓買家購得開心。歡迎直接下單,貨源充足敬請安心購買。','開業');
+
+
+-----------商品假資料-----------
+INSERT INTO PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PIC,IT_PRC,IT_STS,IT_CATE)VALUES('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','1','滿漢大餐
+','以熱油爆炒青蔥帶出香味，加添牛肉麵特色，數種香辛料、發酵醬料與肉湯的組合，呈現熬煮醇厚中帶著嗆辣的口感、並富有牛肉味濃郁感的美味湯頭，蔥香四溢，誘人食慾，令人食指大動',NULL,'1','上架','snack');
+INSERT INTO PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PIC,IT_PRC,IT_STS,IT_CATE)VALUES('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','1','福義軒 芝麻蛋捲
+','純手工蛋捲紮實有口感，蛋味濃厚！ 
+※蛋捲為易碎商品，容易有碎裂狀況，但不影響商品口味，下單前請注意此狀況!※',NULL,'1','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','霧面唇釉','Pony effect 奢華絲絨唇釉/金屬光澤/霧面唇釉 2.3g','90','上架','lifeLiving');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','5','運動藍牙耳機','藍牙4.1 磁吸耳機 音質狠OP','199','上架','tripleC');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','保護貼','買一送一 日本nSG 9H鋼化玻璃保護貼 滿版','150','上架','tripleC');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST004','5','皮鞋','『老兵牛仔』CK-2538正品二層牛皮商務休閒皮鞋','830','上架','lifeLiving');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST005','5','蜂膠漱口水','日本 Propolinse 蜂膠漱口水600ml','200','上架','lifeLiving');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','扭蛋機','線上扭蛋機','318','上架','toyForJoy');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','炸醬麵','限時特賣 韓國農心 炸王炸醬麵1','119','上架','snack');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST008','5','旅行青蛙
+',' 23cm 招財蛙 娃娃機 青蛙 旅蛙 手遊 娃娃 公仔 兒童玩具
+','139','上架','toyForJoy');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','asics亞瑟士
+','【全方位運動戶外館】男款慢跑鞋 GEL KAYANO 24 寬楦2E
+','3486','上架','sport');
+
+
+INSERT INTO PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PIC,IT_PRC,IT_STS,IT_CATE)VALUES('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','12','戰神 - PS4 亞洲中文版
+','　向奧林匹斯諸神尋求復仇的事已過多年，離開眾神的陰影，過著凡人生活的克雷多斯，現在居住於北歐神話的國度裡，必須在陌生的土地上適應學習、面臨無法預測的威脅、並挑戰為人父的第二次機會。他將和兒子阿特柔斯結伴上路，探索嚴酷的北歐荒野，面對各種挑戰，完成一個與他切身相關的目標。',NULL,'1690','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST005','5','【紅龍】全熟勁辣雞腿堡 (辣味 1kg/包)
+','酥脆外皮加上柔嫩的雞腿肉，讓你忍不住一口接一口 注意事項： 
+◆注意事項：當您收到產品後，請立即冷凍以確保產品新鮮。 
+◆退貨事項：商品本身有瑕疵可辦理退貨，退貨必須保留紙箱及商品組合之齊全及完整性。','169','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','義美巧克力小泡芙-1箱
+
+','最暢銷最長青的義美食品泡芙系列 
+香鬆脆脆的外殼與柔滑香濃的巧克力內餡 
+一顆一口方便食用，愈吃愈ㄙㄨㄚˋ嘴，適合各年齡層食用。','309 ','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST005','5','
+BASEUS Micro USB 2.4A快充 引覓磁吸充電線(一線一頭) 數據線 傳輸線 倍思
+
+
+','BASEUS(倍思) 是一個時尚、充滿活力的3C數碼配件品牌。
+BASEUS 正是「基於我們」之意，代表「我們的3C數碼配件基地」。 
+思由心生，用心相連，中文名「倍思」，寓意BASEUS（倍思）將不斷給顧客提供創新、時尚的產品，始終傳遞「我思我創」的品牌文化，用心服務於客戶的需求。
+ 
+','390 ','上架','tripleC');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','5','AMD Ryzen 5-1600 3.2GHz 六核心處理器 (全新盒裝,重返榮耀) 代理公司貨
+
+','
+處理器編號 : AMD Ryzen 5-1600 
+時脈: 3.2/3.6GHz 
+TDP :65W 
+L2 + L3快取記憶體：19MB 
+插槽/封裝方式 :AM4 
+
+CPU外盒包裝或因出貨時期不同而有所更動 
+以上規格資料若有任何錯誤，以原廠所公佈資料為準 
+',' 6300','上架','tripleC');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','5','【穩達3C】ASUS 華碩 顯示卡 PH-GTX1050-2G(來電/來店可享折扣)
+
+
+','■雙滾珠軸承風扇:低摩擦力使運作更順暢,還可延長2倍使用壽命並提升散熱效能 
+■節能省電設計:無須額外電源供應需求,輕鬆盡享遊戲效能 
+■業界獨家全自動製程技術結合超合金電源技術II:呈現一流品質與最佳可靠性  ','4547','上架','tripleC');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','5','Apple iPhone X 64G 5.8吋智慧旗艦手機◆送保貼+空壓殼
+
+','貨品稀少/本產品為限量商品/無法接受7天退換貨/請謹慎下單 
+1200 萬像素廣角與長焦鏡頭相機 
+iOS 11 / Nano-SIM 
+透過TrueDepth相機進行面孔辨識 ','34488 ','上架','tripleC');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','5','(新年強檔!!) FUJITSU CV22T-1R 22型VA面板 液晶寬螢幕 (HDMI介面)
+
+','對比度:1000:1 
+1920x1080 FHD解析 
+可調整傾斜 
+支援VGA/HDMI介面 
+VA 廣視角面板 ','3488 ','上架','tripleC');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','【A+CourBe】透氣網紗拉鍊加排釦修飾雕塑褲
+
+
+','腹部加壓修飾小腹 
+拉鍊加排釦設計 
+透氣網紗材質 
+前後兩根軟骨支撐 
+立體提臀設計 ','409 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','Champion【活力】運動內衣【7904】黑色.絕佳透氣天然棉布料
+','◆商品內容：Champion【活力】運動內衣【7904】黑色x1件 
+
+◆鋼圈：無 
+
+◆商品尺寸：S、M、L
+
+◆顏色：黑色、灰色、白色
+
+◆材質：面布-88%棉.12%彈性纖維  裡布-84%聚酯纖維.16%彈性纖維
+★歐美崇尚運動舒適自然，故以雙層彈性布製作★
+★亦可使用胸貼或自行加襯墊★
+ ','1607 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','牛仔褲--極致享瘦舞出自信星星刺繡刷色側邊接片雙口袋中腰窄管牛仔褲(藍XL-7L)-N91眼圈熊中大尺碼
+
+','■彈力牛仔面料 
+■貓抓皺褶淺藍刷色 
+■個性造型星星刺繡 
+■窄管褲型拉長比例 
+■獨家加大尺碼款式 ','550 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','easyoga超時尚網紗拼接踩腳運動褲 Active Stirrup Leggings
+
+
+','透氣又性感的網紗與網布完美拼接，穿出秋冬最時尚的瑜伽style 
+
+3D立體流線剪接設計，能修飾臀線與腿部線條 
+
+長及腳板的踩腳設計，完美拉長下半身比例 
+
+*100%台灣製造  ','2641 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','韓版--休閒經典條紋簡約氣質皮革紋章圓領彈性短袖上衣(黑L-3L)-T279眼圈熊中大尺碼0418
+
+
+
+','■純棉混紡柔軟好穿
+■氣質圓領修飾肩頸
+■皮革紋章質感時尚
+■百搭修身亮麗版型
+■經典顯瘦時尚條紋','261 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST003','5','【eBest 貝絲特彈性襪】200丹比基尼型褲襪、二色-單雙','輕度分段減壓款式，200B蕾絲型 
+萊卡+聚酯纖維，漸進式壓力設計 
+觸感更細緻舒適 
+台灣製造 
+耐勾不易破','650 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','Nitro Plus GPS 光學運動錶-藍色款 下殺200 輸入折扣碼FITMOM300再折300','GPS、光學心率、SEIKO 電池、Sharp LCD 
+五種運動模式、生活計步、智慧提醒','2290 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','《快速到貨》健康步道指壓板(單片)腳底按摩器
+','室內戶外皆可使用 
+輕巧收納不佔空間 
+在家輕鬆腳底按摩','33 ','上架','sport');
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','【 X-BIKE 晨昌】 平板專用健身車 (可放平板手機) 台灣精品 19807IP
+','內建可放平板、手機架，邊運動邊看影片、聊LINE、逛FB、玩手遊…通通沒問題！','4932 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','詹士 MIZUNO 美津濃 WAVE SAYONARA 4 男慢跑鞋 J1GC163041','一般型波浪片適合中高足弓跑友使用。 
+U4ic中底材質,重量減少30%。 
+前足發泡橡膠大底，舒適性更提升。 
+前足SMOOTH RIDE 大底彎曲溝槽設計。 
+DYNAMOTION FIT鞋面構造。','1690 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','不燒襠壓縮褲-九分','★不燒襠壓縮褲(第三代) 
+★鐵屁股，鐵大腿，鐵膝蓋，鐵小腿，還有燒襠都退錢! 
+★高腰包覆，穩定核心肌群。 
+★股四頭肌的支撐線設計，加強大腿肌群的持續力。 
+★跑完全馬，擠霸k超馬也沒有異味!','2720 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','
+Rumble Roller Beastie深層組織按壓放鬆狼牙球《加強版》惡魔球-美國進口
+','表面是凸狀設計，按壓的角度的更深 
+適合深層的肌筋摩放鬆或激痛點的按壓 
+美國進口','1080 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST006','5','《快速到貨》輕巧手足健身車
+','簡單輕巧、免插電(無噪音) 
+家居保健!!手腳交替運動 
+多種使用模式(坐姿/臥姿) 
+無障礙空間，不分男女老少','890 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST005','5','【asics亞瑟士】【全方位運動戶外館】男款慢跑鞋 GEL-NIMBUS 20 -獄紅藍(T800N4949)
+','.FluidRide雙密度中底材質 
+‧是亞瑟士專業鞋款中最柔軟的款式 
+‧T-GEL亞瑟膠充分吸震緩衝 
+‧FluidFit網布提升舒適與包覆感','3346','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','可超取 胖Q貓珪藻土矽藻土地墊(7色可選)
+','可愛貓圓滾滾的身體超療癒 
+超強吸水力珪藻土矽藻土讓居家更舒適 
+輕巧合適尺寸放哪都適合 
+豐富色彩多樣化7色可選','299','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','【家家居家】台塑生醫 除臭清新噴霧255ml (清爽茶香)
+','台塑生醫 Dr’s Formula《居家防護系列》 
+★市售價:$169元 
+★Pchome售價:$152元','152','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','速必效螞蟻凝膠餌寶-A 專業滅蟻套裝組合 同步誘殺螞蟻
+
+','★專業滅蟻套裝組合 同步誘殺螞蟻 
+★有效成分「芬普尼」避免螞蟻拒食 
+★兩種餌劑 滅蟻一次搞定 
+★連鎖殺 全巢滅 效果好','149','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','3M 細滑牙線棒-散裝超值量販包 DFH1 36支X4包
+','★較細線材，易清潔死角 
+★不易斷裂、分岔 
+★不易卡住牙縫 
+★方便攜帶','129','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','橘子工坊天然冷洗精 貼身衣物洗滌液-750ml
+','．冷壓食品級橘油，真正3.4倍*卓越天然潔淨力，無有毒化學殘 留好安心。 
+．護手好溫和：使用柑橘植物配方，潔淨衣物同時呵護雙手。 
+．天然中性成分不含化學溶劑，抑 菌抗螨更有效。','239','上架','lifeLiving');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','【SY 聲億】6WLED燈泡白光(6入)
+','通過CNS認證 
+低耗電量.使用壽命長 
+無藍光.紅外線.紫外線傷害 
+藝術燈飾具.檯燈.夜燈等照明皆可用','399','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','【Hello Rain 雨傘媽媽】無敵UV小黑傘-亮黃
+
+','★ 超輕巧17cm，包包 口袋都可輕鬆放入 
+★ 外層黑膠塗層，內裡高級PG素布 雙重防晒 
+★ 全新改良防夾手推式開關','299','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','咖啡手沖套裝禮盒
+
+
+','讓您與手沖大師只有這一組的距離 
+不鏽鋼原木柄手沖壺 
+手沖不銹鋼咖啡濾杯 
+高級陶瓷馬克杯2入 
+銀水波咖啡匙 2入 ','1750','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','【現貨】住宅式火災警報器(偵測煙霧/溫度)免接系統~~皆有消防署認證標籤
+
+
+
+','※有【偵測煙霧】及【偵測溫度】二款,作用不同,建議可一起搭配 
+特點: 
+採用年長者及兒童都容易聽見、聽懂的語音播報。 
+電力持久，採用國際品牌Panasonic長效鋰電池。 
+最適合透天住宅。 
+具有自動測試的功能，用戶能即時得知機器發生異常。 
+具有高亮度警報閃光顯示器，環狀顯示，無視覺死角。  ','580','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST008','5','【HATCHIMALS】魔法寵物蛋 ( 綠粉蛋殼 )╭★ JOYBUS 歡樂寶貝
+
+
+
+
+','★ 神奇的寵物魔法蛋來囉！ 
+
+★ 透過與孩子接觸和被照料後才會『 有了生命 』並將蛋孵化！ 
+
+★ 內建的養育遊戲模式是強而有力的情感連接和有趣體驗 
+
+★ 它會像小孩子一樣的學你說話！ 
+
+★ 孵化的寶貝為隨機哦！','2639','上架','toyForJoy');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST008','5','
+(研達Toy Friend)抱抱白白日記(抱枕)-2入組(加送白白日記泡棉立體貼紙1張)
+','白白日記軟綿綿抱枕 
+兩款入-很正常+很放鬆 ，一次帶回家 
+買2入全套組就加送白白日記立體泡棉貼紙1張 
+
+採用彈性超柔布料填充羽絨棉製作,觸感柔順超好摸 
+#限量販售 
+#出貨時間請詳閱【寄送說明】','980','上架','toyForJoy');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST008','5','
+(研達Toy Friend)抱抱白白日記(抱枕)-2入組(加送白白日記泡棉立體貼紙1張)
+','白白日記軟綿綿抱枕 
+兩款入-很正常+很放鬆 ，一次帶回家 
+買2入全套組就加送白白日記立體泡棉貼紙1張 
+
+採用彈性超柔布料填充羽絨棉製作,觸感柔順超好摸 
+#限量販售 
+#出貨時間請詳閱【寄送說明】','980','上架','toyForJoy');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST008','5','
+(研達Toy Friend)不死兔玩偶抱枕+兩用托特包超值組
+
+
+','不死兔4樣商品一次擁有 
+#馬上省808元 
+#單筆訂單限購1組 
+超值組內容物如下 
+不死兔睡香香玩偶抱枕(大) 
+不死兔睡香香玩偶抱枕(小) 
+不死兔好心情兩用托特包-粉藍噗滋 
+不死兔好心情兩用托特包-粉紅噗妮 
+#此賣場訂單不可合併購買其他商品 ','1290','上架','toyForJoy');
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','
+日雜風格 馬來貘頸枕 花色獨特 觸感扎實 搞怪交換禮物
+','．出國旅遊必備 
+．上班午休好好眠 
+．簡約實用','340','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','
+【好適家】雙面兩用強效保潔墊-雙人(天空藍)
+','．採用超細纖維保暖絨 
+．3M防潑水處理緹花表布 
+．中層90gm超厚舒適透氣絲棉層','270','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','
+條紋 透氣網可水洗涼蓆 單人(90cm*180cm) 
+','透氣性超好 表面不留汗水 簡易收納
+','1020','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','
+《Homelike》雅緻雙門坐式穿鞋椅 鞋櫃 置物櫃 收納櫃 玄關櫃 (二色任選)
+','◆具穿鞋椅、鞋櫃雙功能 
+◆雙門設計，愛鞋不沾塵 
+◆胡桃、楓木兩色自由選 
+◆Size:寬60 x 深30 x 高42cm
+','688','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','
+【台灣製造】Will Bedding 抱枕心45*45cm*400g飽滿型(適用42*42cm枕套) 尺寸可訂做
+','◆柔軟舒適彈性支撐 
+◆台灣製造品質保證 
+◆歡迎提供尺寸訂做
+','120','上架','furniture');
+
+
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','
+ 
+★普雷伊★【NS】
+','Nintendo Labo(任天堂 Labo) Toy-Con 02: Robot Kit - Switch
+
+','2980','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','Switch 超級瑪利歐 奧德賽 中英日字幕 Super Mario Odyssey',
+'支援繁體中文，全球同步上市 
+本次採「沙盒探索 3D 瑪利歐」 
+配合 Nintendo Switch 的功能 
+追加了「丟擲帽子」新動作
+
+','1600','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','血源詛咒 遠古獵人版 - PS4 中文版
+
+','收錄有 2015 年 3 月發行的本篇內容以及劇情追加章節「遠古獵人」
+
+','1290','上架','Game');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','【PS4】黑暗靈魂3 薪火漸逝《中文版》
+
+
+','※商品封面以實體封面為準 
+※此商品為預購商品，在發售前切勿與其他商品合併購買
+
+','1090','上架','Game');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','PS4 Pro主機「極致黑」7017型 1TB
+
+','即日起至12/31日止 
+購買 PS4 指定主機將享有以下限定優惠 
+1．送指定遊戲任選兩片 
+2．本館獨家優惠，加購指定遊戲享9折價 
+
+','12980','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','免運費《快速到貨》迴力巨輪健美輪
+
+
+','高強度碳鋼!!收縮自動迴彈 
+巨輪切面輪圈，訓練無死角 
+工學握把貼合手掌(防脫離)
+
+','279','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','【BLADEZ】BW15-複合式重訓椅 啞鈴訓練 重量訓練 舉重床 啞鈴椅
+
+
+
+','★拉閥式安全調節鈕可多角度調整椅背 
+★後方附移動輪 
+★可當仰臥板、飛鳥啞鈴凳、臥推舉重床、腹肌訓練等多項功能 
+★承重180KG
+
+','4224','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','Well-Come＊V47i-plus旗艦級電動揚升電動跑步機電跑
+
+
+
+
+','提供兩年保固,消耗品 跑步板 跑步帶一年保固(保固期間完全免費) 
+130cm x 47cm 1.6T磨砂紋跑步帶 
+18mm 厚跑步板 
+藍色背光 
+15段電動坡度升降 
+1-18km 大馬力
+
+','17790','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','快速到貨》高速培林450G加重跳繩(鋼絲)','內崁鋼絲堅固耐用 
+負重鐵條增強訓練 
+內置高速培林軸承 
+調整繩長適合身高
+
+','99','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','秒殺機種 磁控健身車 31公分超大座墊
+','【台灣精品 x-bike 新機型 19807】 
+【保證台灣製造外銷日本】 
+【免組裝 貨到即可使用】
+
+','4320','上架','workOut');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','台同健康活力館-背樂脊椎伸展器（M）舒緩工作壓力改善坐姿 提高自律神經系統自律能力
+
+','舒緩背部壓力，伸展脊椎 
+當靠背可舒解工作壓力改善坐姿 
+幫助激發一天工作活力
+
+','1290','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','【築地一番鮮】精緻刺身料亭總匯(天使紅蝦+鮭魚卵+北海道干貝)','★年菜搶鮮 結帳85折 
+★新鮮產地直送，品質保證 
+★年節伴手禮高檔選擇 
+★送禮自用兩相宜 
+★讚不絕口的好滋味
+
+','2278','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','嚴選優良金牌野生烏魚子禮盒4兩X2片_加購第二組966元','★榮獲台灣十大優質烏魚子 
+★嚴選野生特大烏魚子 
+★採用傳統日曬法製作 
+★烏魚子需採用野生烏魚無腥味魚卵大顆
+
+','1380','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','[北海道人氣伴手禮]北海道燒帝王蟹煎餅18入~日本空運直輸~
+','北海道濃厚蟹味烤煎餅
+豐富口感和金黃色澤的絕妙搭配
+是配茶下酒的好伴侶
+
+','399','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','【糖村SUGAR 】饌星花綻禮盒
+
+','「糖村超人氣夢幻牛軋糖」3大要件：原料、溫度、時間 嚴選飽滿香脆的杏仁粒
+
+','450','上架','snack');
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','Lotte小熊餅乾巧克力-6盒
+
+
+','41g/盒(6盒/組)
+
+','209','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST009','5','QP美乃滋 450g 蛋黃沾醬 沙拉醬 調味醬 キユーピー マヨネーズ 日本進口
+
+
+
+','日本原裝進口 
+嚴格的品質標準 
+打造出日本第一的家庭必備調味醬 
+豐富的口感 適合各式料理
+
+
+','145','上架','snack');
+
+---------------------------------------------------------------------------------------以下為官方商店商品-----------
+INSERT INTO PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PIC,IT_PRC,IT_STS,IT_CATE)VALUES('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','1','滿漢大餐
+','以熱油爆炒青蔥帶出香味，加添牛肉麵特色，數種香辛料、發酵醬料與肉湯的組合，呈現熬煮醇厚中帶著嗆辣的口感、並富有牛肉味濃郁感的美味湯頭，蔥香四溢，誘人食慾，令人食指大動',NULL,'1','上架','snack');
+INSERT INTO PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PIC,IT_PRC,IT_STS,IT_CATE)VALUES('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','1','福義軒 芝麻蛋捲
+','純手工蛋捲紮實有口感，蛋味濃厚！ 
+※蛋捲為易碎商品，容易有碎裂狀況，但不影響商品口味，下單前請注意此狀況!※',NULL,'1','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','霧面唇釉','Pony effect 奢華絲絨唇釉/金屬光澤/霧面唇釉 2.3g','90','上架','lifeLiving');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','運動藍牙耳機','藍牙4.1 磁吸耳機 音質狠OP','199','上架','tripleC');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','保護貼','買一送一 日本nSG 9H鋼化玻璃保護貼 滿版','150','上架','tripleC');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','皮鞋','『老兵牛仔』CK-2538正品二層牛皮商務休閒皮鞋','830','上架','lifeLiving');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','蜂膠漱口水','日本 Propolinse 蜂膠漱口水600ml','200','上架','lifeLiving');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','扭蛋機','線上扭蛋機','318','上架','toyForJoy');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','炸醬麵','限時特賣 韓國農心 炸王炸醬麵1','119','上架','snack');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','旅行青蛙
+',' 23cm 招財蛙 娃娃機 青蛙 旅蛙 手遊 娃娃 公仔 兒童玩具
+','139','上架','toyForJoy');
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','asics亞瑟士
+','【全方位運動戶外館】男款慢跑鞋 GEL KAYANO 24 寬楦2E
+','3486','上架','sport');
+
+
+INSERT INTO PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PIC,IT_PRC,IT_STS,IT_CATE)VALUES('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','12','戰神 - PS4 亞洲中文版
+','　向奧林匹斯諸神尋求復仇的事已過多年，離開眾神的陰影，過著凡人生活的克雷多斯，現在居住於北歐神話的國度裡，必須在陌生的土地上適應學習、面臨無法預測的威脅、並挑戰為人父的第二次機會。他將和兒子阿特柔斯結伴上路，探索嚴酷的北歐荒野，面對各種挑戰，完成一個與他切身相關的目標。',NULL,'1690','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【紅龍】全熟勁辣雞腿堡 (辣味 1kg/包)
+','酥脆外皮加上柔嫩的雞腿肉，讓你忍不住一口接一口 注意事項： 
+◆注意事項：當您收到產品後，請立即冷凍以確保產品新鮮。 
+◆退貨事項：商品本身有瑕疵可辦理退貨，退貨必須保留紙箱及商品組合之齊全及完整性。','169','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','義美巧克力小泡芙-1箱
+
+','最暢銷最長青的義美食品泡芙系列 
+香鬆脆脆的外殼與柔滑香濃的巧克力內餡 
+一顆一口方便食用，愈吃愈ㄙㄨㄚˋ嘴，適合各年齡層食用。','309 ','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+BASEUS Micro USB 2.4A快充 引覓磁吸充電線(一線一頭) 數據線 傳輸線 倍思
+
+
+','BASEUS(倍思) 是一個時尚、充滿活力的3C數碼配件品牌。
+BASEUS 正是「基於我們」之意，代表「我們的3C數碼配件基地」。 
+思由心生，用心相連，中文名「倍思」，寓意BASEUS（倍思）將不斷給顧客提供創新、時尚的產品，始終傳遞「我思我創」的品牌文化，用心服務於客戶的需求。
+ 
+','390 ','上架','tripleC');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','AMD Ryzen 5-1600 3.2GHz 六核心處理器 (全新盒裝,重返榮耀) 代理公司貨
+
+','
+處理器編號 : AMD Ryzen 5-1600 
+時脈: 3.2/3.6GHz 
+TDP :65W 
+L2 + L3快取記憶體：19MB 
+插槽/封裝方式 :AM4 
+
+CPU外盒包裝或因出貨時期不同而有所更動 
+以上規格資料若有任何錯誤，以原廠所公佈資料為準 
+',' 6300','上架','tripleC');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【穩達3C】ASUS 華碩 顯示卡 PH-GTX1050-2G(來電/來店可享折扣)
+
+
+','■雙滾珠軸承風扇:低摩擦力使運作更順暢,還可延長2倍使用壽命並提升散熱效能 
+■節能省電設計:無須額外電源供應需求,輕鬆盡享遊戲效能 
+■業界獨家全自動製程技術結合超合金電源技術II:呈現一流品質與最佳可靠性  ','4547','上架','tripleC');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','Apple iPhone X 64G 5.8吋智慧旗艦手機◆送保貼+空壓殼
+
+','貨品稀少/本產品為限量商品/無法接受7天退換貨/請謹慎下單 
+1200 萬像素廣角與長焦鏡頭相機 
+iOS 11 / Nano-SIM 
+透過TrueDepth相機進行面孔辨識 ','34488 ','上架','tripleC');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','(新年強檔!!) FUJITSU CV22T-1R 22型VA面板 液晶寬螢幕 (HDMI介面)
+
+','對比度:1000:1 
+1920x1080 FHD解析 
+可調整傾斜 
+支援VGA/HDMI介面 
+VA 廣視角面板 ','3488 ','上架','tripleC');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【A+CourBe】透氣網紗拉鍊加排釦修飾雕塑褲
+
+
+','腹部加壓修飾小腹 
+拉鍊加排釦設計 
+透氣網紗材質 
+前後兩根軟骨支撐 
+立體提臀設計 ','409 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','Champion【活力】運動內衣【7904】黑色.絕佳透氣天然棉布料
+','◆商品內容：Champion【活力】運動內衣【7904】黑色x1件 
+
+◆鋼圈：無 
+
+◆商品尺寸：S、M、L
+
+◆顏色：黑色、灰色、白色
+
+◆材質：面布-88%棉.12%彈性纖維  裡布-84%聚酯纖維.16%彈性纖維
+★歐美崇尚運動舒適自然，故以雙層彈性布製作★
+★亦可使用胸貼或自行加襯墊★
+ ','1607 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','牛仔褲--極致享瘦舞出自信星星刺繡刷色側邊接片雙口袋中腰窄管牛仔褲(藍XL-7L)-N91眼圈熊中大尺碼
+
+','■彈力牛仔面料 
+■貓抓皺褶淺藍刷色 
+■個性造型星星刺繡 
+■窄管褲型拉長比例 
+■獨家加大尺碼款式 ','550 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','easyoga超時尚網紗拼接踩腳運動褲 Active Stirrup Leggings
+
+
+','透氣又性感的網紗與網布完美拼接，穿出秋冬最時尚的瑜伽style 
+
+3D立體流線剪接設計，能修飾臀線與腿部線條 
+
+長及腳板的踩腳設計，完美拉長下半身比例 
+
+*100%台灣製造  ','2641 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','韓版--休閒經典條紋簡約氣質皮革紋章圓領彈性短袖上衣(黑L-3L)-T279眼圈熊中大尺碼0418
+
+
+
+','■純棉混紡柔軟好穿
+■氣質圓領修飾肩頸
+■皮革紋章質感時尚
+■百搭修身亮麗版型
+■經典顯瘦時尚條紋','261 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【eBest 貝絲特彈性襪】200丹比基尼型褲襪、二色-單雙','輕度分段減壓款式，200B蕾絲型 
+萊卡+聚酯纖維，漸進式壓力設計 
+觸感更細緻舒適 
+台灣製造 
+耐勾不易破','650 ','上架','Women_Clothing');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','Nitro Plus GPS 光學運動錶-藍色款 下殺200 輸入折扣碼FITMOM300再折300','GPS、光學心率、SEIKO 電池、Sharp LCD 
+五種運動模式、生活計步、智慧提醒','2290 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','《快速到貨》健康步道指壓板(單片)腳底按摩器
+','室內戶外皆可使用 
+輕巧收納不佔空間 
+在家輕鬆腳底按摩','33 ','上架','sport');
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【 X-BIKE 晨昌】 平板專用健身車 (可放平板手機) 台灣精品 19807IP
+','內建可放平板、手機架，邊運動邊看影片、聊LINE、逛FB、玩手遊…通通沒問題！','4932 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','詹士 MIZUNO 美津濃 WAVE SAYONARA 4 男慢跑鞋 J1GC163041','一般型波浪片適合中高足弓跑友使用。 
+U4ic中底材質,重量減少30%。 
+前足發泡橡膠大底，舒適性更提升。 
+前足SMOOTH RIDE 大底彎曲溝槽設計。 
+DYNAMOTION FIT鞋面構造。','1690 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','不燒襠壓縮褲-九分','★不燒襠壓縮褲(第三代) 
+★鐵屁股，鐵大腿，鐵膝蓋，鐵小腿，還有燒襠都退錢! 
+★高腰包覆，穩定核心肌群。 
+★股四頭肌的支撐線設計，加強大腿肌群的持續力。 
+★跑完全馬，擠霸k超馬也沒有異味!','2720 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+Rumble Roller Beastie深層組織按壓放鬆狼牙球《加強版》惡魔球-美國進口
+','表面是凸狀設計，按壓的角度的更深 
+適合深層的肌筋摩放鬆或激痛點的按壓 
+美國進口','1080 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','《快速到貨》輕巧手足健身車
+','簡單輕巧、免插電(無噪音) 
+家居保健!!手腳交替運動 
+多種使用模式(坐姿/臥姿) 
+無障礙空間，不分男女老少','890 ','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【asics亞瑟士】【全方位運動戶外館】男款慢跑鞋 GEL-NIMBUS 20 -獄紅藍(T800N4949)
+','.FluidRide雙密度中底材質 
+‧是亞瑟士專業鞋款中最柔軟的款式 
+‧T-GEL亞瑟膠充分吸震緩衝 
+‧FluidFit網布提升舒適與包覆感','3346','上架','sport');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','可超取 胖Q貓珪藻土矽藻土地墊(7色可選)
+','可愛貓圓滾滾的身體超療癒 
+超強吸水力珪藻土矽藻土讓居家更舒適 
+輕巧合適尺寸放哪都適合 
+豐富色彩多樣化7色可選','299','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST007','5','【家家居家】台塑生醫 除臭清新噴霧255ml (清爽茶香)
+','台塑生醫 Dr’s Formula《居家防護系列》 
+★市售價:$169元 
+★Pchome售價:$152元','152','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','速必效螞蟻凝膠餌寶-A 專業滅蟻套裝組合 同步誘殺螞蟻
+
+','★專業滅蟻套裝組合 同步誘殺螞蟻 
+★有效成分「芬普尼」避免螞蟻拒食 
+★兩種餌劑 滅蟻一次搞定 
+★連鎖殺 全巢滅 效果好','149','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','3M 細滑牙線棒-散裝超值量販包 DFH1 36支X4包
+','★較細線材，易清潔死角 
+★不易斷裂、分岔 
+★不易卡住牙縫 
+★方便攜帶','129','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','橘子工坊天然冷洗精 貼身衣物洗滌液-750ml
+','．冷壓食品級橘油，真正3.4倍*卓越天然潔淨力，無有毒化學殘 留好安心。 
+．護手好溫和：使用柑橘植物配方，潔淨衣物同時呵護雙手。 
+．天然中性成分不含化學溶劑，抑 菌抗螨更有效。','239','上架','lifeLiving');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【SY 聲億】6WLED燈泡白光(6入)
+','通過CNS認證 
+低耗電量.使用壽命長 
+無藍光.紅外線.紫外線傷害 
+藝術燈飾具.檯燈.夜燈等照明皆可用','399','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【Hello Rain 雨傘媽媽】無敵UV小黑傘-亮黃
+
+','★ 超輕巧17cm，包包 口袋都可輕鬆放入 
+★ 外層黑膠塗層，內裡高級PG素布 雙重防晒 
+★ 全新改良防夾手推式開關','299','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','咖啡手沖套裝禮盒
+
+
+','讓您與手沖大師只有這一組的距離 
+不鏽鋼原木柄手沖壺 
+手沖不銹鋼咖啡濾杯 
+高級陶瓷馬克杯2入 
+銀水波咖啡匙 2入 ','1750','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【現貨】住宅式火災警報器(偵測煙霧/溫度)免接系統~~皆有消防署認證標籤
+
+
+
+','※有【偵測煙霧】及【偵測溫度】二款,作用不同,建議可一起搭配 
+特點: 
+採用年長者及兒童都容易聽見、聽懂的語音播報。 
+電力持久，採用國際品牌Panasonic長效鋰電池。 
+最適合透天住宅。 
+具有自動測試的功能，用戶能即時得知機器發生異常。 
+具有高亮度警報閃光顯示器，環狀顯示，無視覺死角。  ','580','上架','lifeLiving');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【HATCHIMALS】魔法寵物蛋 ( 綠粉蛋殼 )╭★ JOYBUS 歡樂寶貝
+
+
+
+
+','★ 神奇的寵物魔法蛋來囉！ 
+
+★ 透過與孩子接觸和被照料後才會『 有了生命 』並將蛋孵化！ 
+
+★ 內建的養育遊戲模式是強而有力的情感連接和有趣體驗 
+
+★ 它會像小孩子一樣的學你說話！ 
+
+★ 孵化的寶貝為隨機哦！','2639','上架','toyForJoy');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+(研達Toy Friend)抱抱白白日記(抱枕)-2入組(加送白白日記泡棉立體貼紙1張)
+','白白日記軟綿綿抱枕 
+兩款入-很正常+很放鬆 ，一次帶回家 
+買2入全套組就加送白白日記立體泡棉貼紙1張 
+
+採用彈性超柔布料填充羽絨棉製作,觸感柔順超好摸 
+#限量販售 
+#出貨時間請詳閱【寄送說明】','980','上架','toyForJoy');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+(研達Toy Friend)抱抱白白日記(抱枕)-2入組(加送白白日記泡棉立體貼紙1張)
+','白白日記軟綿綿抱枕 
+兩款入-很正常+很放鬆 ，一次帶回家 
+買2入全套組就加送白白日記立體泡棉貼紙1張 
+
+採用彈性超柔布料填充羽絨棉製作,觸感柔順超好摸 
+#限量販售 
+#出貨時間請詳閱【寄送說明】','980','上架','toyForJoy');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+(研達Toy Friend)不死兔玩偶抱枕+兩用托特包超值組
+
+
+','不死兔4樣商品一次擁有 
+#馬上省808元 
+#單筆訂單限購1組 
+超值組內容物如下 
+不死兔睡香香玩偶抱枕(大) 
+不死兔睡香香玩偶抱枕(小) 
+不死兔好心情兩用托特包-粉藍噗滋 
+不死兔好心情兩用托特包-粉紅噗妮 
+#此賣場訂單不可合併購買其他商品 ','1290','上架','toyForJoy');
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+日雜風格 馬來貘頸枕 花色獨特 觸感扎實 搞怪交換禮物
+','．出國旅遊必備 
+．上班午休好好眠 
+．簡約實用','340','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+【好適家】雙面兩用強效保潔墊-雙人(天空藍)
+','．採用超細纖維保暖絨 
+．3M防潑水處理緹花表布 
+．中層90gm超厚舒適透氣絲棉層','270','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+條紋 透氣網可水洗涼蓆 單人(90cm*180cm) 
+','透氣性超好 表面不留汗水 簡易收納
+','1020','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+《Homelike》雅緻雙門坐式穿鞋椅 鞋櫃 置物櫃 收納櫃 玄關櫃 (二色任選)
+','◆具穿鞋椅、鞋櫃雙功能 
+◆雙門設計，愛鞋不沾塵 
+◆胡桃、楓木兩色自由選 
+◆Size:寬60 x 深30 x 高42cm
+','688','上架','furniture');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+【台灣製造】Will Bedding 抱枕心45*45cm*400g飽滿型(適用42*42cm枕套) 尺寸可訂做
+','◆柔軟舒適彈性支撐 
+◆台灣製造品質保證 
+◆歡迎提供尺寸訂做
+','120','上架','furniture');
+
+
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','
+ 
+★普雷伊★【NS】
+','Nintendo Labo(任天堂 Labo) Toy-Con 02: Robot Kit - Switch
+
+','2980','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','Switch 超級瑪利歐 奧德賽 中英日字幕 Super Mario Odyssey',
+'支援繁體中文，全球同步上市 
+本次採「沙盒探索 3D 瑪利歐」 
+配合 Nintendo Switch 的功能 
+追加了「丟擲帽子」新動作
+
+','1600','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','血源詛咒 遠古獵人版 - PS4 中文版
+
+','收錄有 2015 年 3 月發行的本篇內容以及劇情追加章節「遠古獵人」
+
+','1290','上架','Game');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【PS4】黑暗靈魂3 薪火漸逝《中文版》
+
+
+','※商品封面以實體封面為準 
+※此商品為預購商品，在發售前切勿與其他商品合併購買
+
+','1090','上架','Game');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','PS4 Pro主機「極致黑」7017型 1TB
+
+','即日起至12/31日止 
+購買 PS4 指定主機將享有以下限定優惠 
+1．送指定遊戲任選兩片 
+2．本館獨家優惠，加購指定遊戲享9折價 
+
+','12980','上架','Game');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','免運費《快速到貨》迴力巨輪健美輪
+
+
+','高強度碳鋼!!收縮自動迴彈 
+巨輪切面輪圈，訓練無死角 
+工學握把貼合手掌(防脫離)
+
+','279','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【BLADEZ】BW15-複合式重訓椅 啞鈴訓練 重量訓練 舉重床 啞鈴椅
+
+
+
+','★拉閥式安全調節鈕可多角度調整椅背 
+★後方附移動輪 
+★可當仰臥板、飛鳥啞鈴凳、臥推舉重床、腹肌訓練等多項功能 
+★承重180KG
+
+','4224','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','Well-Come＊V47i-plus旗艦級電動揚升電動跑步機電跑
+
+
+
+
+','提供兩年保固,消耗品 跑步板 跑步帶一年保固(保固期間完全免費) 
+130cm x 47cm 1.6T磨砂紋跑步帶 
+18mm 厚跑步板 
+藍色背光 
+15段電動坡度升降 
+1-18km 大馬力
+
+','17790','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','快速到貨》高速培林450G加重跳繩(鋼絲)','內崁鋼絲堅固耐用 
+負重鐵條增強訓練 
+內置高速培林軸承 
+調整繩長適合身高
+
+','99','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','秒殺機種 磁控健身車 31公分超大座墊
+','【台灣精品 x-bike 新機型 19807】 
+【保證台灣製造外銷日本】 
+【免組裝 貨到即可使用】
+
+','4320','上架','workOut');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','台同健康活力館-背樂脊椎伸展器（M）舒緩工作壓力改善坐姿 提高自律神經系統自律能力
+
+','舒緩背部壓力，伸展脊椎 
+當靠背可舒解工作壓力改善坐姿 
+幫助激發一天工作活力
+
+','1290','上架','workOut');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【築地一番鮮】精緻刺身料亭總匯(天使紅蝦+鮭魚卵+北海道干貝)','★年菜搶鮮 結帳85折 
+★新鮮產地直送，品質保證 
+★年節伴手禮高檔選擇 
+★送禮自用兩相宜 
+★讚不絕口的好滋味
+
+','2278','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','嚴選優良金牌野生烏魚子禮盒4兩X2片_加購第二組966元','★榮獲台灣十大優質烏魚子 
+★嚴選野生特大烏魚子 
+★採用傳統日曬法製作 
+★烏魚子需採用野生烏魚無腥味魚卵大顆
+
+','1380','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','[北海道人氣伴手禮]北海道燒帝王蟹煎餅18入~日本空運直輸~
+','北海道濃厚蟹味烤煎餅
+豐富口感和金黃色澤的絕妙搭配
+是配茶下酒的好伴侶
+
+','399','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','【糖村SUGAR 】饌星花綻禮盒
+
+','「糖村超人氣夢幻牛軋糖」3大要件：原料、溫度、時間 嚴選飽滿香脆的杏仁粒
+
+','450','上架','snack');
+
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','Lotte小熊餅乾巧克力-6盒
+','41g/盒(6盒/組)
+
+','209','上架','snack');
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST001','5','QP美乃滋 450g 蛋黃沾醬 沙拉醬 調味醬 キユーピー マヨネーズ 日本進口
+
+
+
+','日本原裝進口 
+嚴格的品質標準 
+打造出日本第一的家庭必備調味醬 
+豐富的口感 適合各式料理
+
+
+','145','上架','snack');
+
+
+Insert into PRODUCT(IT_ID,ST_ID,IT_NUM,IT_NAME,IT_INTRO,IT_PRC,IT_STS,IT_CATE)values('IT'||LPAD(to_char(PRODUCT_SEQ.NEXTVAL), 3, '0'),'ST002','1',
+
+
+---佩伶新增的商品假資料----
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'LIGHT FRAME 儲物邊櫃', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'SLICE 餐桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'DOUBLE 餐桌、工作桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '書桌、工作桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'KWSU書桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'ATELIER K工坊系列滑輪咖啡桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'Divanitas 義大利手工扶手椅', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'Larsen 義大利手工三人沙發 ', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國餅乾', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '299', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國巧克力', '韓國Crown巧克力三明治餅乾161g厚實酥脆餅乾搭上濃郁香草巧克力☆韓國皇冠夾心', empty_blob(), '79', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國海太蜂蜜餅乾蜂蜜脆餅蜂蜜奶油三角洋芋餅', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '79', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國小魚點心餅', '韓國超人氣零食~可愛小魚造型，鹹鹹香脆風味', empty_blob(), '50', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國皇家古典巧克力蛋糕', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '50', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國不倒翁~ 辣炒年糕風味乾拌杯麵(1杯裝)', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '199', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國 Enaak~香脆點心麵-辣味(14g*30包)盒裝  小雞麵', '韓國超人氣零食~可愛小魚造型，鹹鹹香脆風味', empty_blob(), '30', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國好麗友~ 好多魚餅乾(烤蝦)90g', '韓國超人氣零食~可愛小魚造型，鹹鹹香脆風味', empty_blob(), '30', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國好麗友~ Market O 布朗尼蛋糕(巧克力)80g', '韓國好麗友~ Market O布朗尼蛋糕(巧克力)80g', empty_blob(), '100', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國 好麗友~ 巧克力脆片餅乾(90g)', '韓國超人氣零食~', empty_blob(), '50', '上架', 'snack');
+
+---------------------------------------------------------------------------------------
+
+--促銷方案假資料--
+
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP001', '情人節最佳禮物！', '2月14日是浪漫的西洋情人節，3月14日是白色情人節，農曆7月7日則是七夕情人節。在這些特別的日子，不知道有什麼活動、能去哪慶祝、有什麼節日限定套餐、該送什麼禮物才好(卡片、巧克力、花、其他東西)......別擔心，幫大家整理了情人節資訊，包括：情人節活動、推薦餐廳、約會好去處、禮物排行榜～希望大家都能度過一個浪漫的夜晚。', empty_blob(), TO_DATE('2018-02-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-02-14 23:59:59','yyyy/mm/dd hh24:mi:ss'), '下架', '0.8');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP003', '會員首次購物活動', '全體會員或個人專屬優惠活動; 指定商品會員價或點數狂飆; 手機板寵i卡優惠零時差; 輕鬆積點1元積1點; 點點抵現金折抵無上限; 每週六會員日點數飆6倍; 會員生日當月5號點數飆20倍; 精選專櫃購物享9折; VIP點金會員升等禮等。', empty_blob(), TO_DATE('2018-03-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-03-31 23:59:59','yyyy/mm/dd hh24:mi:ss'), '下架', '0.9');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP003', '暢貨出清ROANN', '女裝網路下殺最低，限時特賣的高品質長版背心、短褲、上衣、雪紡洋裝，各式各樣最新的日系女裝都在這。台灣網路服飾品牌，提供平價且高品質的衣服，線上可直接購買女裝、男裝、嬰兒裝、童裝、帆布鞋等。', empty_blob(), TO_DATE('2018-04-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-04-30 23:59:59','yyyy/mm/dd hh24:mi:ss'), '下架', '0.8');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP004', '電子3C購物', '提供各種3C數位產品，筆電、手機、電腦螢幕、主機板、電源供應器等3C零組件及滑鼠鍵盤與印表機等週邊配件、生活家電、家用遊戲機與遊戲軟體。販響應20 for future－提撥20%的銷售利潤，來照顧更多台灣孩子的未來。消費購物還能順手做公益。提供3C數位、生活家電、各式耗材補充品銷售，是您挑選3C產品、打造智慧生活的好選擇！ 電器醫院，享專屬快速通道取貨諮詢服務。', empty_blob(), TO_DATE('2018-04-10 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-06-10 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上架', '0.5');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP002', '運動特價', '超低折扣，好康優惠，全年無休， 快速到貨、免運費，給你購物零負擔！ 運動.休閒用品,健身美體器材,自行車等。來自法國，全台最大運動用品店─有最齊全的商品，購物最方便！本公司擁有並銷售十六個自有運動品牌，旨在提供最全面的運動種類，並以最實惠的價格，讓初學至專業運動愛好者一次滿足。', empty_blob(), TO_DATE('2018-04-15 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-06-10 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上架', '0.7');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP004', '平價家具', '1995年創立於比利時藝術之都安特衛普，是全球最卓越的原木實木家具家具品牌，品牌精神結合了創作和自然的感性，實用與工藝的理性與國際許多出色的頂尖設計師跨界合作，創造一件件簡約、大方、俐落、優雅，富饒現代與永恆美感的設計原木家具。  更嚴謹選用成長超過30年，甚至50年以上高品質的柚木製作家具，堅持選用接近柚木核心部份的優質木材，確保密度與油脂含量皆在最佳狀態，不上色、不上漆處理，讓每件家具不僅擁有最佳的一致品質，原始木質紋理和木結的美感，更顯獨特而別緻。 傳統卓越的榫接技藝，更確保木材不因各地不同天候環境的因素而受潮、膨脹、變型，讓實木家具家具即使歷經時間的更迭，更顯現本身的風格與光采。', empty_blob(), TO_DATE('2018-04-20 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-05-20 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上架', '0.8');
+
+---------------------------------------------------------------
+
+--促銷明細假資料--
+
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT149');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT047');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT046');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT044');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT147');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT002', 'IT054');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT002', 'IT053');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT002', 'IT052');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT003', 'IT024');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT003', 'IT022');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT004', 'IT072');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT004', 'IT056');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT004', 'IT073');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT005', 'IT060');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT005', 'IT059');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT005', 'IT058');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT142');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT141');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT140');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT139');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT138');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT137');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT143');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT048');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT049');
+
+commit;
+--------------------------------------------------------
+----任務假資料---
+
+INSERT INTO MISSION(MIS_ID, EMP_NO, MIS_NAME, MIS_INTRO, MIS_S_DATE, MIS_E_DATE, MIS_STS, BNS_PNT, MIS_PIC) VALUES ('MIS'||LPAD(TO_CHAR(MISSION_SEQ.NEXTVAL),3,'0'), 'EMP001', '首次註冊', '成功註冊會員，即贈送10紅利金點！', TO_DATE('2018-01-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-12-31 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上線', '10', empty_blob());
+INSERT INTO MISSION(MIS_ID, EMP_NO, MIS_NAME, MIS_INTRO, MIS_S_DATE, MIS_E_DATE, MIS_STS, BNS_PNT, MIS_PIC) VALUES ('MIS'||LPAD(TO_CHAR(MISSION_SEQ.NEXTVAL),3,'0'), 'EMP003', 'HAPPY代購', '成功代購達10件，即可得紅利金1500！', TO_DATE('2018-01-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-12-31 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上線', '1500', empty_blob());
+INSERT INTO MISSION(MIS_ID, EMP_NO, MIS_NAME, MIS_INTRO, MIS_S_DATE, MIS_E_DATE, MIS_STS, BNS_PNT, MIS_PIC) VALUES ('MIS'||LPAD(TO_CHAR(MISSION_SEQ.NEXTVAL),3,'0'), 'EMP004', '買賣GO！', '成功建立店家，並成交一筆，即有500紅利金！', TO_DATE('2018-01-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-02-28 23:59:59','yyyy/mm/dd hh24:mi:ss'), '已過期', '500', empty_blob());
+INSERT INTO MISSION(MIS_ID, EMP_NO, MIS_NAME, MIS_INTRO, MIS_S_DATE, MIS_E_DATE, MIS_STS, BNS_PNT, MIS_PIC) VALUES ('MIS'||LPAD(TO_CHAR(MISSION_SEQ.NEXTVAL),3,'0'), 'EMP001', '春節分享YA', '新增3筆文章，即享100紅利金！', TO_DATE('2018-02-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-02-28 23:59:59','yyyy/mm/dd hh24:mi:ss'), '已過期', '100', empty_blob());
+INSERT INTO MISSION(MIS_ID, EMP_NO, MIS_NAME, MIS_INTRO, MIS_S_DATE, MIS_E_DATE, MIS_STS, BNS_PNT, MIS_PIC) VALUES ('MIS'||LPAD(TO_CHAR(MISSION_SEQ.NEXTVAL),3,'0'), 'EMP003', '代購真EASY', '成功代購達1件，即可得紅利金100！', TO_DATE('2018-03-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-05-31 23:59:59','yyyy/mm/dd hh24:mi:ss'), '線上', '100', empty_blob());
+
+
+---------------------------------------------------
+----會員任務清單假資料-
+
+
+INSERT INTO MEMBER_MISSION_LIST(MIS_ID, MEM_ID, MEM_MIS_STS) VALUES ('MIS001', 'M000001', '未完成');
+INSERT INTO MEMBER_MISSION_LIST(MIS_ID, MEM_ID, MEM_MIS_STS) VALUES ('MIS002', 'M000002', '已完成');
+INSERT INTO MEMBER_MISSION_LIST(MIS_ID, MEM_ID, MEM_MIS_STS) VALUES ('MIS003', 'M000003', '未完成');
+INSERT INTO MEMBER_MISSION_LIST(MIS_ID, MEM_ID, MEM_MIS_STS) VALUES ('MIS004', 'M000004', '未完成');
+INSERT INTO MEMBER_MISSION_LIST(MIS_ID, MEM_ID, MEM_MIS_STS) VALUES ('MIS005', 'M000004', '未完成');
+
+
+
+---------------------------------------文章檢舉假資料-------------------------------------
+
+INSERT INTO ARTICLE_APPEAL (ART_APL_ID,ART_ID,MEM_ID,ART_APL_CNT,ART_APL_STS,ART_APL_DATE) 
+VALUES('AAI'||LPAD(TO_CHAR(ART_APL_ID.NEXTVAL), 3, '0'),'ART001','M000001','發文人錯字連篇，非常礙眼','待處理',TO_TIMESTAMP('2018-03-20 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO ARTICLE_APPEAL (ART_APL_ID,ART_ID,MEM_ID,ART_APL_CNT,ART_APL_STS,ART_APL_DATE) 
+VALUES('AAI'||LPAD(TO_CHAR(ART_APL_ID.NEXTVAL), 3, '0'),'ART002','M000002','火星文麻煩請打中文，地球很危險，等會被抓走做實驗','待處理',TO_TIMESTAMP('2018-04-20 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO ARTICLE_APPEAL (ART_APL_ID,ART_ID,MEM_ID,ART_APL_CNT,ART_APL_STS,ART_APL_DATE) 
+VALUES('AAI'||LPAD(TO_CHAR(ART_APL_ID.NEXTVAL), 3, '0'),'ART003','M000003','讓我按按看這個功能有沒有用，聽說檢舉成功會附贈紅利20點，我都按按看，這樣我就可以累積很多紅利了','待處理',TO_TIMESTAMP('2018-04-20 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO ARTICLE_APPEAL (ART_APL_ID,ART_ID,MEM_ID,ART_APL_CNT,ART_APL_STS,ART_APL_DATE) 
+VALUES('AAI'||LPAD(TO_CHAR(ART_APL_ID.NEXTVAL), 3, '0'),'ART004','M000004','我猜你家應該不養牛，不對，是你家的牛都養不大，看你吹得牛都跑光了，瞎文別在這嚇人好嗎?','待處理',TO_TIMESTAMP('2018-01-20 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO ARTICLE_APPEAL (ART_APL_ID,ART_ID,MEM_ID,ART_APL_CNT,ART_APL_STS,ART_APL_DATE) 
+VALUES('AAI'||LPAD(TO_CHAR(ART_APL_ID.NEXTVAL), 3, '0'),'ART003','M000003','反正按按看也不會少塊肉，運氣好搞不好還可以賺積分','待處理',TO_TIMESTAMP('2018-04-21 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+INSERT INTO ARTICLE_APPEAL (ART_APL_ID,ART_ID,MEM_ID,ART_APL_CNT,ART_APL_STS,ART_APL_DATE) 
+VALUES('AAI'||LPAD(TO_CHAR(ART_APL_ID.NEXTVAL), 3, '0'),'ART004','M000005','文章內容存在極大瑕疵，易誤導消費群眾，請官方重視，並立即處理','待處理',TO_TIMESTAMP('2018-04-22 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+ 
+ 
+ 
+UPDATE ARTICLE_APPEAL set EMP_NO='EMP001', ART_APL_STS='有效檢舉', ART_RAPL='海外購網已驗證實際檢舉內容，判定檢舉有效，該篇檢舉內容已移除下架', ART_RAPLDATE=CURRENT_TIMESTAMP where ART_APL_ID = 'AAI001';
+ 
+UPDATE ARTICLE_APPEAL set EMP_NO='EMP001', ART_APL_STS='有效檢舉', ART_RAPL='海外購網已驗證實際檢舉內容，判定檢舉有效，該篇檢舉內容已移除下架', ART_RAPLDATE=CURRENT_TIMESTAMP where ART_APL_ID = 'AAI002';
+ 
+UPDATE ARTICLE_APPEAL set EMP_NO='EMP001', ART_APL_STS='無效檢舉', ART_RAPL='海外購網已驗證實際檢舉內容，判定檢舉無效，將對不實檢舉會員進行紅利扣分處理', ART_RAPLDATE=CURRENT_TIMESTAMP where ART_APL_ID = 'AAI003';
+ 
+UPDATE ARTICLE_APPEAL set EMP_NO='EMP001', ART_APL_STS='無效檢舉', ART_RAPL='海外購網已驗證實際檢舉內容，檢舉的內容與實際內容不符，判定檢舉無效，將對不實檢舉會員進行紅利扣分處理', ART_RAPLDATE=CURRENT_TIMESTAMP where ART_APL_ID = 'AAI004';
+ 
+
+
+
+
+----------------------------------------文章回復檢舉假資料-------------------------------------------
+INSERT INTO ARTICLE_REPLY_APPEAL (ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE200','M000003','沙發檢舉按一下','待處理',TO_TIMESTAMP('2018-01-22 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE201','M000004','樓主蓋房我拆房','待處理',TO_TIMESTAMP('2018-02-22 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL (ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+ 
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE202','M000002','惡意廣告','待處理',TO_TIMESTAMP('2018-04-22 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+
+
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE203','M000001','ASDFAEFWERWE','待處理',TO_TIMESTAMP('2018-03-22
+18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)  
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE203','M000005','ASDFAEFWERWE','待處理',TO_TIMESTAMP('2018-04-01
+18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)  
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE203','M000001','ASDFAEFWERWE','待處理',TO_TIMESTAMP('2018-01-23
+18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)  
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE203','M000002','ASDFAEFWERWE','待處理',TO_TIMESTAMP('2018-02-12
+18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL (ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+ 
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE203','M000003','ASDFAEFWERWE','待處理',TO_TIMESTAMP('2018-02-11
+18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL (ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+
+
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE203','M000004','ASDFAEFWERWE','待處理',TO_TIMESTAMP('2018-04-15
+18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE201','M000002','惡意廣告','待處理',TO_TIMESTAMP('2018-04-22 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE200','M000002','惡意廣告','待處理',TO_TIMESTAMP('2018-02-21 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO
+ARTICLE_REPLY_APPEAL
+(ART_CAPL_ID,RE_ID,MEM_ID,ART_RE_APL_CNT,ART_RE_APL_STS,ART_RE_APL_DATE)
+VALUES('ACI'||LPAD(TO_CHAR(ART_CAPL_ID.NEXTVAL),
+3, '0'),'ARTRE202','M000002','惡意廣告','待處理',TO_TIMESTAMP('2018-03-06 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+ 
+
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI001';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI002';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI003';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI004';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI005';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI006';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI007';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI008';
+
+UPDATE ARTICLE_REPLY_APPEAL set  EMP_NO ='EMP001', ART_RE_APL_STS ='無效檢舉', ART_RE_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', ART_REDATE=CURRENT_TIMESTAMP where ART_CAPL_ID ='ACI009';
+
+
+
+
+
+
+------收藏商品假資料-------
+INSERT INTO FAVORITE_PRODUCT(MEM_ID,IT_ID) VALUES ('M000001','IT001');
+---------商品申訴假資料-----------
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000001','IT001','專PO廢文,欠檢舉','待處理',TO_TIMESTAMP('2018-02-21 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000002','IT002','專PO廢文,欠檢舉','待處理',TO_TIMESTAMP('2018-02-22 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000003','IT003','專PO廢文,欠檢舉','待處理',TO_TIMESTAMP('2018-02-23 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000004','IT004','專PO廢文,欠檢舉','待處理',TO_TIMESTAMP('2018-02-24 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000005','IT005','專PO廢文,欠檢舉','待處理',TO_TIMESTAMP('2018-02-25 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000006','IT006','專PO廢文,欠檢舉','待處理',TO_TIMESTAMP('2018-02-26 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000007','IT007','垃圾商品也能拿來這裡騙錢，不要認為山寨商品放在網路上就會變黃金','待處理',TO_TIMESTAMP('2018-03-26 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO PRODUCT_APPEAL(IT_APL_ID,MEM_ID,IT_ID,IT_APL_CNT,APL_STS,PA_DATE)
+VALUES('IT_APL'||LPAD(TO_CHAR(PRODUCT_APPEAL_SEQ.NEXTVAL), 3, '0'),'M000008','IT008','按按看這個按鈕聽說還不錯，檢舉成功還能賺紅利點數','待處理',TO_TIMESTAMP('2018-04-26 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+
+UPDATE PRODUCT_APPEAL set  EMP_NO='EMP002', APL_STS='有效檢舉', IT_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', IT_RDATE=CURRENT_TIMESTAMP where IT_APL_ID = 'IT_APL001';
+UPDATE PRODUCT_APPEAL set  EMP_NO='EMP002', APL_STS='有效檢舉', IT_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', IT_RDATE=CURRENT_TIMESTAMP where IT_APL_ID = 'IT_APL002';
+UPDATE PRODUCT_APPEAL set  EMP_NO='EMP002', APL_STS='有效檢舉', IT_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉符合檢舉事項，檢舉結果判定有效', IT_RDATE=CURRENT_TIMESTAMP where IT_APL_ID = 'IT_APL003';
+
+UPDATE PRODUCT_APPEAL set  EMP_NO='EMP002', APL_STS='無效檢舉', IT_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', IT_RDATE=CURRENT_TIMESTAMP where IT_APL_ID = 'IT_APL004';
+UPDATE PRODUCT_APPEAL set  EMP_NO='EMP002', APL_STS='無效檢舉', IT_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', IT_RDATE=CURRENT_TIMESTAMP where IT_APL_ID = 'IT_APL005';
+UPDATE PRODUCT_APPEAL set  EMP_NO='EMP002', APL_STS='無效檢舉', IT_RAPL='感謝您對海外購不良信息提拱檢舉，由於此次檢舉不符合檢舉事項，檢舉結果判定無效', IT_RDATE=CURRENT_TIMESTAMP where IT_APL_ID = 'IT_APL006';
+
+
+
+---------------商品訂單假資料-------------------
+INSERT INTO STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DATE,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,BUYER_NAME)VALUES('REC'||LPAD(TO_CHAR(STORE_ORDER_SEQ.NEXTVAL), 3, '0'),'M000001','ST001',5000,'信用卡付款',SYSDATE,'訂單受理中','桃園縣平鎮區87號',037-878787,200,'廖杰魚');
+
+---------------商品訂單明細假資料-------------------------
+INSERT INTO STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)VALUES('REC001','IT001',20);
+
+---------------紅利商品------------------------------------------------------------------------------------------------------------------------------------------------------------智翔新增--------------------------------------------------------
+INSERT INTO BONUS_PRODUCT VALUES ('BP'||LPAD(TO_CHAR(BNS_PRD_SEQ.NEXTVAL),3,'0'),'EMP001','奶茶雙重奏','過去北部有「三兄弟」是珍珠、布丁、仙草，後來全部改為「雙重奏」，只有珍珠跟布丁，價格不變但也不會虧，因為料真的給的多的很實在，而也有網友透露中南部其實還有奶茶三兄弟，目前似乎只有北部沒有。','',50,99,'上架',0);
+INSERT INTO BONUS_PRODUCT VALUES ('BP'||LPAD(TO_CHAR(BNS_PRD_SEQ.NEXTVAL),3,'0'),'EMP002','奶茶','過去北部有「三兄弟」是珍珠、布丁、仙草，後來全部改為「雙重奏」，只有珍珠跟布丁，價格不變但也不會虧，因為料真的給的多的很實在，而也有網友透露中南部其實還有奶茶三兄弟，目前似乎只有北部沒有。','',30,99,'上架',0);
+INSERT INTO BONUS_PRODUCT VALUES ('BP'||LPAD(TO_CHAR(BNS_PRD_SEQ.NEXTVAL),3,'0'),'EMP003','芋頭牛奶','店員透露這款只做中杯的，芋頭是新鮮大甲芋頭去熬煮的，除非是螞蟻人不然建議喝無糖就好，因為加糖下去真的非常甜，下面更有網友留言大讚，直呼「芋頭牛奶 超推」。','',50,99,'上架',0);
+INSERT INTO BONUS_PRODUCT VALUES ('BP'||LPAD(TO_CHAR(BNS_PRD_SEQ.NEXTVAL),3,'0'),'EMP004','鹿耳島烤奶茶',' 喝起來類似烏龍奶茶的味道，店員推薦這款還蠻好喝的，加珍珠更棒更有口感，而下方也有網友留言大讚，直呼「超愛鹿耳島珍珠烤奶，可以連喝3天」。 ','',45,99,'上架',0);
+INSERT INTO BONUS_PRODUCT VALUES ('BP'||LPAD(TO_CHAR(BNS_PRD_SEQ.NEXTVAL),3,'0'),'EMP002','珍珠紅茶拿鐵 ','與珍奶不同，拿鐵是加牛奶的，喝起來更為滑順，冰飲的話糖是加果糖，如果是點熱飲的話是加入砂糖，建議可以點熱飲比較香比較好喝。 ','',55,99,'上架',0);
+-------------------------------------------------紅利商品訂單-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO BONUS_PRODUCT_ORDER (BNS_REC_ID,MEM_ID,SUM_PRC,REC_DLV_STS,MEM_ADD,MEM_PH,MEM_NAME)VALUES('BPO'||LPAD(TO_CHAR(BSN_PRD_ORD_SEQ.NEXTVAL),3,'0'),'M000001',45,'貨物運送中','台北市中正區南海路49號',0223610270, '明金城');
+INSERT INTO BONUS_PRODUCT_ORDER (BNS_REC_ID,MEM_ID,SUM_PRC,REC_DLV_STS,MEM_ADD,MEM_PH,MEM_NAME)VALUES('BPO'||LPAD(TO_CHAR(BSN_PRD_ORD_SEQ.NEXTVAL),3,'0'),'M000002',50,'貨物運送中','台北市中正區貴陽街一段243號',0223315730, '金城');
+INSERT INTO BONUS_PRODUCT_ORDER (BNS_REC_ID,MEM_ID,SUM_PRC,REC_DLV_STS,MEM_ADD,MEM_PH,MEM_NAME)VALUES('BPO'||LPAD(TO_CHAR(BSN_PRD_ORD_SEQ.NEXTVAL),3,'0'),'M000003',95,'已送達','台北市松山區復興南路一段39號',0809008888, '明金');
+INSERT INTO BONUS_PRODUCT_ORDER (BNS_REC_ID,MEM_ID,SUM_PRC,REC_DLV_STS,MEM_ADD,MEM_PH,MEM_NAME)VALUES('BPO'||LPAD(TO_CHAR(BSN_PRD_ORD_SEQ.NEXTVAL),3,'0'),'M000005',50,'貨物運送中','新北市板橋區莊敬路62號',0222534417, '明城');
+INSERT INTO BONUS_PRODUCT_ORDER (BNS_REC_ID,MEM_ID,SUM_PRC,REC_DLV_STS,MEM_ADD,MEM_PH,MEM_NAME)VALUES('BPO'||LPAD(TO_CHAR(BSN_PRD_ORD_SEQ.NEXTVAL),3,'0'),'M000008',30,'已送達','台北市中正區中山南路20號',0223619132, '城');
+---------------------------------------------------紅利商品訂單明細--------------------------------------------------
+INSERT INTO BONUS_PRODUCT_ORDER_DETAIL VALUES('BPO001','BP004',1);
+INSERT INTO BONUS_PRODUCT_ORDER_DETAIL VALUES('BPO002','BP003',1);
+INSERT INTO BONUS_PRODUCT_ORDER_DETAIL VALUES('BPO003','BP004',1);
+INSERT INTO BONUS_PRODUCT_ORDER_DETAIL VALUES('BPO004','BP003',1);
+INSERT INTO BONUS_PRODUCT_ORDER_DETAIL VALUES('BPO005','BP001',1);
+INSERT INTO BONUS_PRODUCT_ORDER_DETAIL VALUES('BPO002','BP004',1);
+
+---------------------------
+
+
+
+
+
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000001','ST001',4000,'信用卡付款','訂單處理中','桃園縣平鎮區87號',037-888777,205,'1','王大陸');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000002','ST002',8050,'信用卡付款','訂單處理中','台北縣北平路87號',037-478787,140,'2','曹靖瑋');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000003','ST003',310,'信用卡付款','訂單處理中','台北縣南京東路87號',037-845787,150,'3','李叔同');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000004','ST004',5580,'信用卡付款','已出貨','新竹縣湖口區87號',037-788787,108,'4','三毛');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000005','ST005',170,'信用卡付款','已出貨','台南縣永康區87號',037-274567,103,'5','張作驥');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000006','ST006',789,'信用卡付款','訂單取消','台北縣內湖區87號',037-678766,104,'6','曾昭旭');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000007','ST007',287,'信用卡付款','已完成訂單','宜蘭縣三星區87號',037-578887,505,'7','李慕白');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000008','ST008',145,'信用卡付款','已完成訂單','屏東縣龍泉區87號',037-158487,304,'8','曹雪芹');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000009','ST009',324,'信用卡付款','訂單取消','苗栗縣頭份鎮87號',037-378387,270,'9','蔡英文');
+Insert into STORE_ORDER(REC_ID,MEM_ID,ST_ID,PAYMENT,REC_PY,REC_DLV_STS,MEM_ADD,MEM_PH,USD_BNS,DLV_ID,BUYER_NAME)values('REC'||LPAD(to_char(Store_Order_SEQ.NEXTVAL), 3, '0'),'M000010','ST010',940,'信用卡付款','已出貨','台中縣草屯區87號',037-128787,280,'10','MOMO');
+
+
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000002','IT002');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000003','IT003');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000004','IT004');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000005','IT005');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000006','IT006');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000007','IT007');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000008','IT008');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000009','IT009');
+Insert into FAVORITE_PRODUCT(MEM_ID,IT_ID) values ('M000010','IT010');
+
+
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC002','IT002',7);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC003','IT003',5);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC004','IT004',3);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC005','IT005',8);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC006','IT006',9);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC007','IT007',1);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC008','IT008',2);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC009','IT009',11);
+Insert into STORE_RECEIPT_DETAIL(REC_ID,IT_ID,IT_NUM)values('REC010','IT010',4);
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT001','M000001','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT002','M000002','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT001','M000001','多買有折扣ㄇ?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT003','M000011','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT002','M000010','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT005','M000005','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT008','M000009','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT010','M000004','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT001','M000001','J葛是現貨嗎?');
+INSERT INTO PRODUCTFAQ (FAQ_ID,IT_ID,MEM_ID,FAQ_CNT)VALUES('FAQ'||LPAD(TO_CHAR(FAQ_ID_SEQ.NEXTVAL),3,'0'),'IT001','M000001','J葛是現貨嗎?');
+
+---------------------------------------最新消息假資料---------------------------------
+
+INSERT INTO NEWS (NS_ID,EMP_NO,NS_TIT,NS_CNT,NS_DATE) 
+VALUES('NS'||LPAD(TO_CHAR(NS_ID.NEXTVAL), 3, '0'),'EMP001','溫馨提示，海外GO不會打電話向您要求匯款等資料',
+'提醒您，海外GO不會主動打電話向會員要求匯款、提供銀行等相關訊息，如有發現請及時向警察單位舉報。',
+TO_TIMESTAMP('2018-02-23 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO NEWS (NS_ID,EMP_NO,NS_TIT,NS_CNT,NS_DATE) 
+VALUES('NS'||LPAD(TO_CHAR(NS_ID.NEXTVAL), 3, '0'),'EMP001','商城安全系統全面升級，保障您的交易安全',
+'海外GO提供第三支付系統，保障您的交易安全，您再也不擔心付款後收不到貨。',
+TO_TIMESTAMP('2018-01-23 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+---------------------------------------------------------------------------------------------------------------------------
+INSERT INTO NEWS (NS_ID,EMP_NO,NS_TIT,NS_CNT,NS_DATE) 
+VALUES('NS'||LPAD(TO_CHAR(NS_ID.NEXTVAL), 3, '0'),'EMP001','海外購成立台灣實體服務處，地址:320桃園市中壢區中大路300號',
+'"海外購新成立台灣服務處
+地址:320桃園市中壢區中大路300號。
+服務時間上午9:00至下午5:00。"
+',
+TO_TIMESTAMP('2018-01-20 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+---------------------------------------------------------------------------------------------------------------------------
+INSERT INTO NEWS (NS_ID,EMP_NO,NS_TIT,NS_CNT,NS_DATE) 
+VALUES('NS'||LPAD(TO_CHAR(NS_ID.NEXTVAL), 3, '0'),'EMP001','還在位母親節送禮煩惱嗎? 海外購母親節活動開始囉!!',
+'"首先感謝天下的母親們：
+
+當每位朋友能看見這個活動時，都因母親懷胎十月，才有今天值得紀念
+在這值得感恩的日子裡，海外購 特別為每位在母親節，想給媽媽一份驚喜禮物的海外購 APP用戶朋友們盡點心力，舉辦 “拍照打卡感言讚" 迷你活動。
+
+
+於5月10日母親節當天，海外購將為您代送禮物給媽媽，只要是在大台北地區，不管是人在外面不方便回去，或是想在家中臨時給媽媽驚喜的你，海外購 都幫您達成想孝敬媽媽的心意。
+
+詳細內容請見下列活動辦法。
+
+活動時間：
+
+107年4月25日上午09：00起，到107年5月20日下午17：00止
+
+活動參與條件：
+
+1. 僅限收送件都在大台北地區（含台北市與新北市全區）的 海外購 用戶版使用者
+必須透過客服專線：03-425-7387與活動專員登記活動。
+
+2. 寄件者自己的手機要可使用Facebook臉書與使用中帳號
+
+3. 寄件者必須出現在收件或送件任一地點
+
+4. 因機車容易受地形顛簸，恕不受理蛋糕或其他易碎物品
+
+5. 為避免不必要糾紛，本活動不代墊代付寄件人貨款
+
+活動內容：
+
+1. 凡是收送件地址、都在大台北地區的海外購 客戶版使用者，只要撥打海外購客服專線：0800-425-7387，與母親節活動服務專員登記您的收送件基本資料，受理時間自上午09：00起，到下午17：00之前，超過時間恕不受理。
+
+2. 寄件人只要在收件或送件任一地點，手持禮物用手機拍照後，連同照片在自己的Facebook上留下對媽媽的感恩小語（短短的就好，多的部分請親自告訴媽媽，她會更開心喔！），並在打卡地標中標註 “海外購 物流平台" 發佈在Facebook上。
+
+3. 經海外購司機當場拍寄件人手機Facebook完成發佈畫面，回傳公司後，海外購將為您負擔這筆機車快遞費用，您不必支付一毛錢。"
+',
+TO_TIMESTAMP('2018-04-24 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+---------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO NEWS (NS_ID,EMP_NO,NS_TIT,NS_CNT,NS_DATE) 
+VALUES('NS'||LPAD(TO_CHAR(NS_ID.NEXTVAL), 3, '0'),'EMP001','海外購溫馨提示，網路購物提高警覺，小撇步防詐騙',
+'"根據資策會產業情報研究所（MIC）的調查，2016年國人平均每人年網購總金額高達2萬7千多元，較2015年成長12%。然而，網路購物的興盛，也成為不法之徒覬覦的目標。按照警政署165反詐騙專線提供的資料，經濟部要先提醒消費者，一般常見的網路購物詐騙特徵如下：
+
+1、於非上班時間接到客服電話：詐騙集團通常利用非上班時間進行詐騙，以使民眾無從向原購買店家確認，再次提醒消費者，網購平臺不會以電話方式進行通知。
+
+2、接到來電號碼顯示有「+0」即有可能為詐騙電話：電信業者就來自境外的電話，會顯示＋號，若電話號碼顯示＋及國內私人公司或公務單位電話，即為詐騙電話。
+
+3、接到網購業者客服來電：表示誤設為分期付款、誤按購買數量將強制扣款，要求至ATM操作解除分期付款，或購買遊戲點數折抵款項，提醒消費者ATM自動提款機無解除分期付款功能，要求至ATM解除分期付款即為詐騙電話。
+
+4、以通訊軟體私下交易：部分詐騙集團會運用網拍平臺刊登商品資訊，而後請消費者以通訊軟體私下交易以節省相關費用，提醒消費者私下交易若產生糾紛或詐騙，因平臺未留下任何資料將無法協助處理，這也是一種詐騙集團利用消費者貪小便宜的詐騙手法。
+
+5、網拍購物需留意賣家評價：於拍賣平臺進行購物時，需留意賣家的評價，如賣家評價不高、短期間評價飆升或評價多為結標後馬上就有好評等，都需特別留意，以免產生糾紛或受詐騙。
+
+6、無連絡方式、太便宜，提醒消費者千萬別輕易相信：最近透過臉書廣告，出現不少以「貨到付款+免運費」，但無連絡方式之新詐騙手法，提醒您小心慎選，以防止詐騙集團詐騙。
+
+建構安全的購物環境是網購業者及平台基本的責任，雖詐騙集團及駭客之各項手法不斷翻新，但業者仍需不斷精進資安及個資管理技術與能力，以使網站能維持相當之安全性使民眾樂於上網購物。為使民眾能有一個安全、可信任的網路購物環境，本部將與警政署、中華民國無店面零售商業同業公會、網購業者及平台分別運用資安輔導、防詐騙宣導、行政檢查、詐騙偵查等方式，建構一個更為安全之網購環境，減少民眾遭網購詐欺，提升民眾網購之信心。"
+',
+TO_TIMESTAMP('2018-04-25 18:58:30','YYYY-MM-DD HH24:MI:SS'));
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+COMMIT;
+
+
+

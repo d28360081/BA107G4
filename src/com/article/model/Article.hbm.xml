@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.article.model.ArticleVO_Hibernate" table="Article" >
+        
+        <id name="art_id" column="art_id">
+            <generator class="com.article.model.StockCodeGenerator" >
+              <param name="sequence" >art_seq</param>
+            </generator>  
+        </id>
+        <many-to-one name="memVO" class="com.member.model.MemVO" lazy="false">
+            <column name="mem_id"/>
+        </many-to-one>
+        <property name="art_tlt" column="art_tlt"/>
+        <property name="art_date" column="art_date"/>
+        <property name="art_cnt" column="art_cnt"/>
+        <property name="art_pic1" column="art_pic1"/>
+        <property name="art_pic2" column="art_pic2"/>
+        <property name="art_pic3" column="art_pic3"/>
+        <property name="like_num" insert="false">
+        	<column name="like_num"/>
+        </property>
+        <property name="art_sts" insert="false">
+        	<column name="art_sts"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

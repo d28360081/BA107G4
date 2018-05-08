@@ -1,0 +1,42 @@
+@CHARSET "BIG5";
+
+
+    .abc img {
+
+        border-radius: 10px;
+    }
+
+    .abc {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pdf {
+        background-color: #C9D9DF;
+    }
+
+    .col-sm-4 {
+        padding-bottom: 70px;
+        padding-left: 50px;
+    }
+
+    .col-sm-4 img {
+        padding-bottom: 20px;
+    }
+    .active a{
+        color: #39D0CB;
+    }
+
+     .pagination .active a {
+        background-color: #3ab2d9;
+        border-color: #C9D9DF;
+        color:#ffffff;
+        cursor: default;
+    }
+    .pagination .active a:hover {
+        background-color: #FFFFFF;
+        color:#000000;
+        border-color: #C9D9DF;
+        cursor: default;
+    }
+   

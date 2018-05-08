@@ -1,0 +1,132 @@
+nav.custom{
+    background-color: red;
+    background-image: -webkit-linear-gradient(right,#F5FFFF 0,#FFF 60%);
+    border-width: 0;
+    border-radius: 0;
+       
+}
+.custom.navbar-brand, .navbar-inverse .navbar-nav>li>a{
+text-shadow:none; 
+}
+a.navbar-brand-custom{
+    height: 20px;
+}
+
+.icon-logo_light .path1:before {
+  content: "\e900";
+  color: #000;
+}
+.icon-logo_light .path2:before {
+  content: "\e901";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path3:before {
+  content: "\e902";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path4:before {
+  content: "\e903";
+  color: #fff;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path5:before {
+  content: "\e904";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path6:before {
+  content: "\e905";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path7:before {
+  content: "\e906";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path8:before {
+  content: "\e907";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path9:before {
+  content: "\e908";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path10:before {
+  content: "\e909";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path11:before {
+  content: "\e90a";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path12:before {
+  content: "\e90b";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path13:before {
+  content: "\e90c";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path14:before {
+  content: "\e90d";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path15:before {
+  content: "\e90e";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path16:before {
+  content: "\e90f";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path17:before {
+  content: "\e910";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path18:before {
+  content: "\e911";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path19:before {
+  content: "\e912";
+  color: #0e2a57;
+  margin-left: -4.5546875em;
+}
+.icon-logo_light .path20:before {
+  content: "\e913";
+  color: #000;
+  margin-left: -4.5546875em;
+}
+/*.navbar-nav>li ::before {
+  content: '';
+  display: block;
+      background: -moz-linear-gradient(45deg, #3ab2d9 0%, #16e8b1 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #3ab2d9 0%, #16e8b1 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #3ab2d9 0%, #16e8b1 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab2d9', endColorstr='#16e8b1', GradientType=1);
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  bo
+  
+    position: absolute;
+    left: 0px;
+  
+}*/

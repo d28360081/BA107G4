@@ -1,0 +1,116 @@
+                .img100{
+                   width: 250px;
+                   height:142px;
+                }
+                .PT30{
+                  padding-top: 30px;
+                }
+
+                .btn-buy {
+                    margin-top: 20px;
+                }
+
+                .pic-relative {
+                    position: relative;
+                }
+
+                .right-top {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+
+                .glyphicon-heart {
+                    font-size: 2rem;
+                    color: #ff9999;
+                }
+
+            .ML{
+                margin-left: 10px;
+            }
+             .PT{
+              padding-top: 20px;
+            }   
+            .ML30{
+                margin-left: 30px;
+            }  
+             .ML20{
+                margin-left: 20px;
+            }
+             .ML10{
+                margin-left: 10px;
+            }     
+            .MB{
+               margin-bottom: 30px;
+            }    
+            .topic:after { 
+            height: 30px; 
+            }  
+            .MT0{
+                margin-top: 0px
+            }
+            .lineHight{
+                height: 150px;
+            }
+            .MT50{
+                 margin-top: 50px;
+            }
+            .PL0{
+                padding-left: 0px;
+            }  
+            .minjpg2{
+            height:35px;
+            width:35px;
+        }
+        .minjpg{
+            height:75px;
+            width:75px;
+        }
+        .center{
+           text-align:center;
+           vertical-align:middle;
+        }
+        .right{
+          float:right;
+        }        
+        .rightPL0{
+            padding-left: 0px;
+            float:right;
+        } 
+        .table >tbody>tr>td{
+           vertical-align:middle;
+        } 
+        .table >tbody>tr>th{
+           vertical-align:middle;
+        } 
+        .PL0{
+        		padding-left: 0px;
+        	}      
+        	.MB20{
+        		margin-bottom: 20px;
+        	}  
+        	.minImg{
+        		height: 200px;
+        		width: 200px;
+        	}
+        	.superminImg{
+        		height: 50px;
+        		width: 50px;
+        	}
+            .textLeft{
+            text-align: left;
+          }           
+    	   .PB30PT50{
+    		padding-bottom: 30px;
+            padding-top: 50px;   
+    	}
+            .amountRed{
+                color: red;
+            }
+            .PB{
+            padding-bottom: 20px;
+            }
+            .PT60{
+    padding-top: 60px;
+            }
+   

@@ -1,0 +1,64 @@
+
+---佩伶新增的商品假資料----
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'LIGHT FRAME 儲物邊櫃', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'SLICE 餐桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'DOUBLE 餐桌、工作桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '書桌、工作桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'KWSU書桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'ATELIER K工坊系列滑輪咖啡桌', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'Divanitas 義大利手工扶手椅', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', 'Larsen 義大利手工三人沙發 ', '來自比利時，全球最頂尖的實木家具品牌，以歐洲設計與文化重鎮安特衛普（Antwerp）風格獨具的生活時尚美學為基礎，在25年傳統、精準的榫接技藝下，運用靈活巧思為家具與空間創造一種與眾不同的哲學對話。 在沉穩的機能美學外，充滿原創性又極具現代感的設計，讓每一件作品都如此簡潔且雋永，無上色、無上漆的質樸純淨與俐落呈現出寧靜而現代的美感，令人驚豔的完美設計工藝，不僅貼合人體工學，更詮釋出設計之都安特衛普當代、前衛的設計美學。', empty_blob(), '999', '上架', 'lifeLiving');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國餅乾', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '299', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國巧克力', '韓國Crown巧克力三明治餅乾161g厚實酥脆餅乾搭上濃郁香草巧克力☆韓國皇冠夾心', empty_blob(), '79', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國海太蜂蜜餅乾蜂蜜脆餅蜂蜜奶油三角洋芋餅', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '79', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國小魚點心餅', '韓國超人氣零食~可愛小魚造型，鹹鹹香脆風味', empty_blob(), '50', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國皇家古典巧克力蛋糕', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '50', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國不倒翁~ 辣炒年糕風味乾拌杯麵(1杯裝)', '韓國熱賣2PM代言  遊韓必買伴手禮~', empty_blob(), '199', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國 Enaak~香脆點心麵-辣味(14g*30包)盒裝  小雞麵', '韓國超人氣零食~可愛小魚造型，鹹鹹香脆風味', empty_blob(), '30', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國好麗友~ 好多魚餅乾(烤蝦)90g', '韓國超人氣零食~可愛小魚造型，鹹鹹香脆風味', empty_blob(), '30', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國好麗友~ Market O 布朗尼蛋糕(巧克力)80g', '韓國好麗友~ Market O布朗尼蛋糕(巧克力)80g', empty_blob(), '100', '上架', 'snack');
+INSERT INTO PRODUCT(IT_ID, ST_ID, IT_NUM, IT_NAME, IT_INTRO, IT_PIC, IT_PRC, IT_STS, IT_CATE) VALUES ('IT'||LPAD(TO_CHAR(PRODUCT_SEQ.NEXTVAL),3,'0'), 'ST002', '1', '韓國 好麗友~ 巧克力脆片餅乾(90g)', '韓國超人氣零食~', empty_blob(), '50', '上架', 'snack');
+
+---------------------------------------------------------------------------------------
+
+--促銷方案假資料--
+
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP001', '情人節最佳禮物！', '2月14日是浪漫的西洋情人節，3月14日是白色情人節，農曆7月7日則是七夕情人節。在這些特別的日子，不知道有什麼活動、能去哪慶祝、有什麼節日限定套餐、該送什麼禮物才好(卡片、巧克力、花、其他東西)......別擔心，幫大家整理了情人節資訊，包括：情人節活動、推薦餐廳、約會好去處、禮物排行榜～希望大家都能度過一個浪漫的夜晚。', empty_blob(), TO_DATE('2018-02-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-02-14 23:59:59','yyyy/mm/dd hh24:mi:ss'), '下架', '0.8');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP003', '會員首次購物活動', '全體會員或個人專屬優惠活動; 指定商品會員價或點數狂飆; 手機板寵i卡優惠零時差; 輕鬆積點1元積1點; 點點抵現金折抵無上限; 每週六會員日點數飆6倍; 會員生日當月5號點數飆20倍; 精選專櫃購物享9折; VIP點金會員升等禮等。', empty_blob(), TO_DATE('2018-03-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-03-31 23:59:59','yyyy/mm/dd hh24:mi:ss'), '下架', '0.9');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP003', '暢貨出清ROANN', '女裝網路下殺最低，限時特賣的高品質長版背心、短褲、上衣、雪紡洋裝，各式各樣最新的日系女裝都在這。台灣網路服飾品牌，提供平價且高品質的衣服，線上可直接購買女裝、男裝、嬰兒裝、童裝、帆布鞋等。', empty_blob(), TO_DATE('2018-04-01 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-04-30 23:59:59','yyyy/mm/dd hh24:mi:ss'), '下架', '0.8');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP004', '電子3C購物', '提供各種3C數位產品，筆電、手機、電腦螢幕、主機板、電源供應器等3C零組件及滑鼠鍵盤與印表機等週邊配件、生活家電、家用遊戲機與遊戲軟體。販響應20 for future－提撥20%的銷售利潤，來照顧更多台灣孩子的未來。消費購物還能順手做公益。提供3C數位、生活家電、各式耗材補充品銷售，是您挑選3C產品、打造智慧生活的好選擇！ 電器醫院，享專屬快速通道取貨諮詢服務。', empty_blob(), TO_DATE('2018-04-10 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-06-10 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上架', '0.5');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP002', '運動特價', '超低折扣，好康優惠，全年無休， 快速到貨、免運費，給你購物零負擔！ 運動.休閒用品,健身美體器材,自行車等。來自法國，全台最大運動用品店─有最齊全的商品，購物最方便！本公司擁有並銷售十六個自有運動品牌，旨在提供最全面的運動種類，並以最實惠的價格，讓初學至專業運動愛好者一次滿足。', empty_blob(), TO_DATE('2018-04-15 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-06-10 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上架', '0.7');
+INSERT INTO PROMOTION(PMT_ID, EMP_NO, PMT_NAME, PMT_INTRO, PMT_PIC, PMT_S_DATE, PMT_E_DATE, PMT_STS, PMT_DISCOUNT) VALUES ('PMT'||LPAD(TO_CHAR(PROMOTION_SEQ.NEXTVAL),3,'0'), 'EMP004', '平價家具', '1995年創立於比利時藝術之都安特衛普，是全球最卓越的原木實木家具家具品牌，品牌精神結合了創作和自然的感性，實用與工藝的理性與國際許多出色的頂尖設計師跨界合作，創造一件件簡約、大方、俐落、優雅，富饒現代與永恆美感的設計原木家具。  更嚴謹選用成長超過30年，甚至50年以上高品質的柚木製作家具，堅持選用接近柚木核心部份的優質木材，確保密度與油脂含量皆在最佳狀態，不上色、不上漆處理，讓每件家具不僅擁有最佳的一致品質，原始木質紋理和木結的美感，更顯獨特而別緻。 傳統卓越的榫接技藝，更確保木材不因各地不同天候環境的因素而受潮、膨脹、變型，讓實木家具家具即使歷經時間的更迭，更顯現本身的風格與光采。', empty_blob(), TO_DATE('2018-04-20 00:00:00','yyyy/mm/dd hh24:mi:ss'), TO_DATE('2018-05-20 23:59:59','yyyy/mm/dd hh24:mi:ss'), '上架', '0.8');
+
+---------------------------------------------------------------
+
+--促銷明細假資料--
+
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT149');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT047');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT046');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT044');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT001', 'IT147');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT002', 'IT054');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT002', 'IT053');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT002', 'IT052');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT003', 'IT024');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT003', 'IT022');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT004', 'IT072');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT004', 'IT056');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT004', 'IT073');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT005', 'IT060');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT005', 'IT059');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT005', 'IT058');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT142');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT141');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT140');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT139');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT138');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT137');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT143');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT048');
+INSERT INTO PROMOTION_DETAIL(PMT_ID, IT_ID) VALUES ('PMT006', 'IT049');
+
+commit;
+--------------------------------------------------------
